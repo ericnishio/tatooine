@@ -1,0 +1,26 @@
+.header-container
+  @extend .container
+
+.header
+  +make-row()
+
+  .header-left
+    +make-sm-column(6)
+
+  .header-right
+    +make-sm-column(6)
+
+  .brand-heading
+    color: $brand-heading
+    font-family: $quicksand-font-family
+    font-weight: 300
+    font-size: 78px
+    margin-bottom: 2px
+
+  .lead
+    font-family: $quicksand-font-family
+    font-weight: 300
+    color: $gray-light
+    font-size: 23px
+    letter-spacing: 4px
+    text-transform: uppercase
