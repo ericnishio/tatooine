@@ -99,3 +99,22 @@ function custom_edit_post_link($output) {
 
   return false;
 }
+
+/**
+ * Beautifies a string by adding an <em> toward the end of it.
+ * @param string string
+ * @return string
+ */
+function beautify_string($string) {
+  $length = strlen($string);
+
+  if ($length > 3) {
+    $pos = $length - 3;
+  } else {
+    $pos = $length - 1;
+  }
+
+  $replacement = substr($string, $pos, 1);
+
+  return substr_replace($string, "<em>$replacement</em>", $pos, 1);
+}

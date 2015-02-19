@@ -1,26 +1,71 @@
+.section.section-header
+  background-color: $grapes
+  font-family: $font-family-slim
+  font-weight: 300
+  margin-bottom: 80px
+  padding-top: 80px
+  padding-bottom: 80px
+
+  +respond-to(mobile)
+    padding-top: 20px
+    padding-bottom: 20px
+
+  a
+    color: $pink
+
 .header-container
   @extend .container
 
 .header
-  +make-row()
-
-  .header-left
-    +make-sm-column(6)
-
-  .header-right
-    +make-sm-column(6)
+  text-align: center
 
   .brand-heading
-    color: $brand-heading
-    font-family: $font-family-quicksand
+    color: #fff
+    font-family: $font-family-slim
     font-weight: 300
-    font-size: 78px
+    font-size: 65px
+    margin-top: 0
     margin-bottom: 2px
+    transition: 0.4s ease-in-out
+    opacity: 1
+
+    +respond-to(mobile)
+      font-size: 35px
+
+    &:hover
+      opacity: 0.5
+
+    a
+      color: #fff
+
+    em
+      color: $pink
+      font-style: normal
+
+  .menu
+    ul
+      -webkit-margin-before: 0
+      -webkit-margin-after: 0
+      -webkit-padding-start: 0
+      list-style-type: none
+      margin: 0
+
+      li
+        @extend .button-small
+        display: inline-block
+        margin-right: 5px
+
+        &:last-child
+          margin-right: 0
 
   .lead
-    font-family: $font-family-quicksand
-    font-weight: 300
-    color: $gray-light
-    font-size: 23px
-    letter-spacing: 4px
+    font-family: $font-family-slim
+    font-weight: 400
+    color: $gray-lightest
+    font-size: 14px
+    letter-spacing: 5px
     text-transform: uppercase
+
+    +respond-to(mobile)
+      font-size: 8px
+      font-weight: 300

@@ -1,0 +1,19 @@
+.button
+  @extend .btn
+  @extend .btn-lg
+  border: 2px solid $grapes-washed
+  border-radius: 5px
+  color: $grapes-light
+  font-family: $font-family-slim
+  font-weight: 300
+  transition: 0.2s ease-in-out
+
+  &:hover
+    border-color: $grapes-medium
+
+  a
+    color: $grapes-light
+
+.button-small
+  @extend .button
+  @extend .btn-sm
