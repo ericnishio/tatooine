@@ -72,7 +72,8 @@ function tatooine_comments_number( $count )
 }
 
 add_action( 'wp_enqueue_scripts', 'remove_default_stylesheet', 20 );
-function remove_default_stylesheet() {
+function remove_default_stylesheet()
+{
   wp_dequeue_style( 'style' );
   wp_deregister_style( 'style' );
 
@@ -81,12 +82,14 @@ function remove_default_stylesheet() {
 }
 
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
-function modify_read_more_link() {
-  return '<a class="more-link" href="' . get_permalink() . '">Read more <i class="fa fa-chevron-right"></i></a>';
+function modify_read_more_link()
+{
+  return '<a class="more-link" href="' . get_permalink() . '">' . __('Read more', 'tatooine') . ' <i class="fa fa-angle-right"></i></a>';
 }
 
 add_filter('edit_post_link', 'custom_edit_post_link');
-function custom_edit_post_link($output) {
+function custom_edit_post_link($output)
+{
   global $post;
   global $current_user;
 
@@ -105,7 +108,8 @@ function custom_edit_post_link($output) {
  * @param string string
  * @return string
  */
-function beautify_string($string) {
+function beautify_string($string)
+{
   $length = strlen($string);
 
   if ($length > 3) {

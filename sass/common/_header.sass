@@ -33,7 +33,9 @@
       font-size: 35px
 
     &:hover
-      opacity: 0.5
+      @extend .animated
+      @extend .infinite
+      @extend .bounce
 
     a
       color: #fff
@@ -52,6 +54,7 @@
 
       li
         @extend .button-small
+        @extend .button-inverted
         display: inline-block
         margin-right: 5px
 

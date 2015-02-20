@@ -1,12 +1,22 @@
-.button
+.button-base
   @extend .btn
-  @extend .btn-lg
-  border: 2px solid $grapes-washed
+  border: 2px solid transparent
   border-radius: 5px
-  color: $grapes-light
+  color: $pink
   font-family: $font-family-slim
-  font-weight: 300
+  font-weight: 400
   transition: 0.2s ease-in-out
+
+.button
+  @extend .button-base
+  @extend .btn-lg
+  border-color: $pink
+  padding-left: 30px
+  padding-right: 30px
+
+.button-inverted
+  border-color: $grapes-washed
+  color: $grapes-light
 
   &:hover
     border-color: $grapes-medium
@@ -15,5 +25,6 @@
     color: $grapes-light
 
 .button-small
-  @extend .button
+  @extend .button-base
   @extend .btn-sm
+  font-weight: 300
