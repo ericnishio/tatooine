@@ -9,7 +9,32 @@
     max-width: 100%
     height: auto
 
+  &:hover
+    .edit-post-link
+      opacity: 1
+
+  .edit-post-link
+    background-color: #fff
+    border: 2px solid $gray-super
+    border-radius: 5px
+    color: $gray-light
+    display: table
+    font-size: 32px
+    opacity: 0
+    position: absolute
+    top: 0
+    right: 0
+    width: 50px
+    height: 50px
+    text-align: center
+    transition: 0.2s ease-in-out
+
+    i
+      display: table-cell
+      vertical-align: middle
+
   .entry-info
+    position: relative
     margin-bottom: $section-padding * 2
 
   .heading
@@ -18,13 +43,21 @@
     a
       color: $almost-black
 
-  .info-text
+  .meta-item
     color: $gray-light
+    display: inline-block
     font-family: $font-family-slim
     font-weight: 400
     font-size: 14px
     letter-spacing: 1px
+    margin-right: 15px
     text-transform: uppercase
+
+    &:last-child
+      margin-right: 0
+
+    i
+      color: $gray-light
 
   .more-link
     font-family: $font-family-slim
@@ -35,3 +68,7 @@
 
   .meta-info
     margin-bottom: 30px
+    color: $gray-light
+
+    a
+      color: $gray-light
