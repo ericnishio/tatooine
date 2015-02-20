@@ -8,19 +8,22 @@ Copyright (c) 2014 Daniel Eden
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
-.animated, .header .brand-heading:hover {
+.animated, .header a.brand-heading:hover,
+.header .brand-heading:hover {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-.animated.infinite, .header .brand-heading:hover {
+.animated.infinite, .header a.brand-heading:hover,
+.header .brand-heading:hover {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-.animated.hinge, .header .hinge.brand-heading:hover {
+.animated.hinge,
+.header .hinge.brand-heading:hover {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
@@ -73,7 +76,8 @@ Copyright (c) 2014 Daniel Eden
     transform: translate3d(0, -4px, 0);
   }
 }
-.bounce, .header .brand-heading:hover {
+.bounce, .header a.brand-heading:hover,
+.header .brand-heading:hover {
   -webkit-animation-name: bounce;
   animation-name: bounce;
   -webkit-transform-origin: center bottom;
@@ -1427,7 +1431,8 @@ Copyright (c) 2014 Daniel Eden
     animation-timing-function: ease-in;
   }
 }
-.animated.flip, .header .flip.brand-heading:hover {
+.animated.flip,
+.header .flip.brand-heading:hover {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -12626,24 +12631,34 @@ a:hover, a:focus {
 .header {
   text-align: center;
 }
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header a.brand-heading,
 .header .brand-heading {
   color: #fff;
+  display: block;
   font-family: "Quicksand", serif;
   font-weight: 300;
   font-size: 65px;
+  line-height: 1;
   margin-top: 0;
   margin-bottom: 2px;
   transition: 0.4s ease-in-out;
   opacity: 1;
 }
 @media screen and (max-width: 767px) {
+  .header a.brand-heading,
   .header .brand-heading {
     font-size: 35px;
   }
 }
+.header a.brand-heading a,
 .header .brand-heading a {
   color: #fff;
 }
+.header a.brand-heading em,
 .header .brand-heading em {
   color: #ff3472;
   font-style: normal;

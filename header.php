@@ -13,9 +13,9 @@
       <div class="section-inner">
         <div class="header">
           <?php if ( ! is_singular() ): ?>
-            <h1 class="brand-heading">
+            <h1>
           <?php endif; ?>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'tatooine' ); ?>" rel="home">
+          <a class="brand-heading" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'tatooine' ); ?>" rel="home">
             <?php echo beautify_string( esc_html( get_bloginfo( 'name' ) ) ); ?>
           </a>
           <?php if ( ! is_singular() ): ?>
