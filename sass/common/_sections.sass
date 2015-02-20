@@ -5,6 +5,34 @@
   &.section-secondary
     background-color: $gray-lighter
 
+  &.section-dark,
+  &.section-darker
+    ul
+      list-style: none
+
+      li
+        position: relative
+
+        &:before
+          +fa-icon(angle-right)
+          position: absolute
+          left: -26px
+          top: 7px
+
+    a
+      color: $gray-lightest
+
+      &:hover
+        color: #fff
+
+  &.section-dark
+    background-color: $gray-dark
+    color: $gray-foo
+
+  &.section-darker
+    background-color: $gray-darker
+    color: $gray-foo
+
   &.section-centered
     text-align: center
 

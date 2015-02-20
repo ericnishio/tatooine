@@ -41,13 +41,40 @@ function tatooine_filter_wp_title( $title )
 add_action( 'widgets_init', 'tatooine_widgets_init' );
 function tatooine_widgets_init()
 {
-  register_sidebar( array (
-    'name' => __( 'Sidebar Widget Area', 'tatooine' ),
-    'id' => 'primary-widget-area',
-    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-    'after_widget' => "</li>",
-    'before_title' => '<h3 class="widget-title">',
-    'after_title' => '</h3>',
+  register_sidebar( array(
+    'name'          => 'Footer Column 1',
+    'id'            => 'footer_column_1',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2 class="footer-heading">',
+    'after_title'   => '</h2>',
+  ) );
+
+  register_sidebar( array(
+    'name'          => 'Footer Column 2',
+    'id'            => 'footer_column_2',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2 class="footer-heading">',
+    'after_title'   => '</h2>',
+  ) );
+
+  register_sidebar( array(
+    'name'          => 'Footer Column 3',
+    'id'            => 'footer_column_3',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2 class="footer-heading">',
+    'after_title'   => '</h2>',
+  ) );
+
+  register_sidebar( array(
+    'name'          => 'Footer Bottom',
+    'id'            => 'footer_bottom',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2 class="footer-heading">',
+    'after_title'   => '</h2>',
   ) );
 }
 

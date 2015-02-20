@@ -10108,6 +10108,13 @@ a:hover, a:focus {
   line-height: 1.2;
 }
 
+.heading-3, .footer-heading {
+  font-family: "Quicksand", serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 .button-base, .button, .entry .more-link, .button-small, .header .menu ul li {
   border: 2px solid transparent;
   border-radius: 5px;
@@ -10164,7 +10171,7 @@ a:hover, a:focus {
   font-weight: normal;
   font-style: normal;
 }
-.fa {
+.fa, .section.section-dark ul li:before, .section.section-darker ul li:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -10236,10 +10243,10 @@ a:hover, a:focus {
   float: left;
 }
 
-.fa.pull-left {
+.fa.pull-left, .section.section-dark ul li.pull-left:before, .section.section-darker ul li.pull-left:before {
   margin-right: .3em;
 }
-.fa.pull-right {
+.fa.pull-right, .section.section-dark ul li.pull-right:before, .section.section-darker ul li.pull-right:before {
   margin-left: .3em;
 }
 
@@ -11306,7 +11313,7 @@ a:hover, a:focus {
   content: "";
 }
 
-.fa-angle-right:before {
+.fa-angle-right:before, .section.section-dark ul li:before, .section.section-darker ul li:before {
   content: "";
 }
 
@@ -12512,6 +12519,31 @@ a:hover, a:focus {
 .section.section-secondary {
   background-color: #eeeeee;
 }
+.section.section-dark ul, .section.section-darker ul {
+  list-style: none;
+}
+.section.section-dark ul li, .section.section-darker ul li {
+  position: relative;
+}
+.section.section-dark ul li:before, .section.section-darker ul li:before {
+  position: absolute;
+  left: -26px;
+  top: 7px;
+}
+.section.section-dark a, .section.section-darker a {
+  color: #cacaca;
+}
+.section.section-dark a:hover, .section.section-darker a:hover {
+  color: #fff;
+}
+.section.section-dark {
+  background-color: #333333;
+  color: #868686;
+}
+.section.section-darker {
+  background-color: #262626;
+  color: #868686;
+}
 .section.section-centered {
   text-align: center;
 }
@@ -12644,6 +12676,97 @@ a:hover, a:focus {
     font-size: 8px;
     font-weight: 300;
   }
+}
+
+.footer {
+  margin-top: 80px;
+}
+
+.section.section-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-heading {
+  color: #cacaca;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.footer-columns {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.footer-columns:before, .footer-columns:after {
+  content: " ";
+  display: table;
+}
+.footer-columns:after {
+  clear: both;
+}
+.footer-columns .footer-column {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .footer-columns .footer-column {
+    float: left;
+    width: 33.33333%;
+  }
+}
+
+.copyright-columns {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.copyright-columns:before, .copyright-columns:after {
+  content: " ";
+  display: table;
+}
+.copyright-columns:after {
+  clear: both;
+}
+.copyright-columns i,
+.copyright-columns a i {
+  color: #545152;
+  font-size: 35px;
+  transition: 0.2s ease-in-out color;
+}
+.copyright-columns i:hover,
+.copyright-columns a i:hover {
+  color: #868686;
+}
+.copyright-columns .copyright-column {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .copyright-columns .copyright-column {
+    float: left;
+    width: 50%;
+  }
+}
+.copyright-columns .copyright-column:last-child {
+  text-align: right;
+}
+.copyright-columns .icon {
+  margin-right: 15px;
+}
+.copyright-columns .icon:last-child {
+  margin-right: 0;
+}
+
+.copyright {
+  font-family: "Quicksand", serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 38px;
+  text-transform: uppercase;
 }
 
 .entry img {
