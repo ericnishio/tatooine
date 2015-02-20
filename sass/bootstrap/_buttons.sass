@@ -5,7 +5,19 @@
   color: $pink
   font-family: $font-family-slim
   font-weight: 400
-  transition: 0.2s ease-in-out
+  transition: border-color 0.2s ease-in-out, color 0.15s ease-in-out
+
+  &:hover
+    border-color: #fff
+    color: $pink
+
+  &:focus
+    color: $pink
+    outline: none
+
+  &:active
+    +box-shadow(none)
+    color: $gray-lightest
 
 .button
   @extend .button-base

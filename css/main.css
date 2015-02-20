@@ -3048,10 +3048,11 @@ th {
     display: none;
   }
 
-  .btn > .caret, .button-base > .caret, .button > .caret, .entry .more-link > .caret, .button-small > .caret, .header .menu ul li > .caret,
+  .btn > .caret, .button-base > .caret, .button > .caret, .entry .edit-post-link > .caret, .entry .more-link > .caret, .button-small > .caret, .header .menu ul li > .caret,
   .dropup > .btn > .caret,
   .dropup > .button-base > .caret,
   .dropup > .button > .caret,
+  .entry .dropup > .edit-post-link > .caret,
   .entry .dropup > .more-link > .caret,
   .dropup > .button-small > .caret,
   .header .menu ul .dropup > li > .caret {
@@ -5930,6 +5931,7 @@ input[type="search"] {
   .input-group-sm > .input-group-btn > input[type="date"].btn,
   .input-group-sm > .input-group-btn > input[type="date"].button-base,
   .input-group-sm > .input-group-btn > input[type="date"].button,
+  .entry .input-group-sm > .input-group-btn > input[type="date"].edit-post-link,
   .entry .input-group-sm > .input-group-btn > input[type="date"].more-link,
   .input-group-sm > .input-group-btn > input[type="date"].button-small, .input-group-sm input[type="date"],
   input[type="time"].input-sm,
@@ -5938,6 +5940,7 @@ input[type="search"] {
   .input-group-sm > .input-group-btn > input[type="time"].btn,
   .input-group-sm > .input-group-btn > input[type="time"].button-base,
   .input-group-sm > .input-group-btn > input[type="time"].button,
+  .entry .input-group-sm > .input-group-btn > input[type="time"].edit-post-link,
   .entry .input-group-sm > .input-group-btn > input[type="time"].more-link,
   .input-group-sm > .input-group-btn > input[type="time"].button-small, .input-group-sm
   input[type="time"],
@@ -5947,6 +5950,7 @@ input[type="search"] {
   .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
   .input-group-sm > .input-group-btn > input[type="datetime-local"].button-base,
   .input-group-sm > .input-group-btn > input[type="datetime-local"].button,
+  .entry .input-group-sm > .input-group-btn > input[type="datetime-local"].edit-post-link,
   .entry .input-group-sm > .input-group-btn > input[type="datetime-local"].more-link,
   .input-group-sm > .input-group-btn > input[type="datetime-local"].button-small, .input-group-sm
   input[type="datetime-local"],
@@ -5956,6 +5960,7 @@ input[type="search"] {
   .input-group-sm > .input-group-btn > input[type="month"].btn,
   .input-group-sm > .input-group-btn > input[type="month"].button-base,
   .input-group-sm > .input-group-btn > input[type="month"].button,
+  .entry .input-group-sm > .input-group-btn > input[type="month"].edit-post-link,
   .entry .input-group-sm > .input-group-btn > input[type="month"].more-link,
   .input-group-sm > .input-group-btn > input[type="month"].button-small, .input-group-sm
   input[type="month"] {
@@ -5966,6 +5971,7 @@ input[type="search"] {
   .input-group-lg > .input-group-btn > input[type="date"].btn,
   .input-group-lg > .input-group-btn > input[type="date"].button-base,
   .input-group-lg > .input-group-btn > input[type="date"].button,
+  .entry .input-group-lg > .input-group-btn > input[type="date"].edit-post-link,
   .entry .input-group-lg > .input-group-btn > input[type="date"].more-link,
   .input-group-lg > .input-group-btn > input[type="date"].button-small, .input-group-lg input[type="date"],
   input[type="time"].input-lg,
@@ -5974,6 +5980,7 @@ input[type="search"] {
   .input-group-lg > .input-group-btn > input[type="time"].btn,
   .input-group-lg > .input-group-btn > input[type="time"].button-base,
   .input-group-lg > .input-group-btn > input[type="time"].button,
+  .entry .input-group-lg > .input-group-btn > input[type="time"].edit-post-link,
   .entry .input-group-lg > .input-group-btn > input[type="time"].more-link,
   .input-group-lg > .input-group-btn > input[type="time"].button-small, .input-group-lg
   input[type="time"],
@@ -5983,6 +5990,7 @@ input[type="search"] {
   .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
   .input-group-lg > .input-group-btn > input[type="datetime-local"].button-base,
   .input-group-lg > .input-group-btn > input[type="datetime-local"].button,
+  .entry .input-group-lg > .input-group-btn > input[type="datetime-local"].edit-post-link,
   .entry .input-group-lg > .input-group-btn > input[type="datetime-local"].more-link,
   .input-group-lg > .input-group-btn > input[type="datetime-local"].button-small, .input-group-lg
   input[type="datetime-local"],
@@ -5992,6 +6000,7 @@ input[type="search"] {
   .input-group-lg > .input-group-btn > input[type="month"].btn,
   .input-group-lg > .input-group-btn > input[type="month"].button-base,
   .input-group-lg > .input-group-btn > input[type="month"].button,
+  .entry .input-group-lg > .input-group-btn > input[type="month"].edit-post-link,
   .entry .input-group-lg > .input-group-btn > input[type="month"].more-link,
   .input-group-lg > .input-group-btn > input[type="month"].button-small, .input-group-lg
   input[type="month"] {
@@ -6077,6 +6086,7 @@ input[type="checkbox"] {
 .input-group-lg > .input-group-btn > .form-control-static.btn,
 .input-group-lg > .input-group-btn > .form-control-static.button-base,
 .input-group-lg > .input-group-btn > .form-control-static.button,
+.entry .input-group-lg > .input-group-btn > .form-control-static.edit-post-link,
 .entry .input-group-lg > .input-group-btn > .form-control-static.more-link,
 .input-group-lg > .input-group-btn > .form-control-static.button-small,
 .header .menu ul .input-group-lg > .input-group-btn > li.form-control-static, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
@@ -6084,6 +6094,7 @@ input[type="checkbox"] {
 .input-group-sm > .input-group-btn > .form-control-static.btn,
 .input-group-sm > .input-group-btn > .form-control-static.button-base,
 .input-group-sm > .input-group-btn > .form-control-static.button,
+.entry .input-group-sm > .input-group-btn > .form-control-static.edit-post-link,
 .entry .input-group-sm > .input-group-btn > .form-control-static.more-link,
 .input-group-sm > .input-group-btn > .form-control-static.button-small,
 .header .menu ul .input-group-sm > .input-group-btn > li.form-control-static {
@@ -6096,6 +6107,7 @@ input[type="checkbox"] {
 .input-group-sm > .input-group-btn > .btn,
 .input-group-sm > .input-group-btn > .button-base,
 .input-group-sm > .input-group-btn > .button,
+.entry .input-group-sm > .input-group-btn > .edit-post-link,
 .entry .input-group-sm > .input-group-btn > .more-link,
 .input-group-sm > .input-group-btn > .button-small,
 .header .menu ul .input-group-sm > .input-group-btn > li {
@@ -6111,6 +6123,7 @@ select.input-sm, .input-group-sm > select.form-control,
 .input-group-sm > .input-group-btn > select.btn,
 .input-group-sm > .input-group-btn > select.button-base,
 .input-group-sm > .input-group-btn > select.button,
+.entry .input-group-sm > .input-group-btn > select.edit-post-link,
 .entry .input-group-sm > .input-group-btn > select.more-link,
 .input-group-sm > .input-group-btn > select.button-small {
   height: 36px;
@@ -6122,6 +6135,7 @@ textarea.input-sm, .input-group-sm > textarea.form-control,
 .input-group-sm > .input-group-btn > textarea.btn,
 .input-group-sm > .input-group-btn > textarea.button-base,
 .input-group-sm > .input-group-btn > textarea.button,
+.entry .input-group-sm > .input-group-btn > textarea.edit-post-link,
 .entry .input-group-sm > .input-group-btn > textarea.more-link,
 .input-group-sm > .input-group-btn > textarea.button-small,
 select[multiple].input-sm,
@@ -6130,6 +6144,7 @@ select[multiple].input-sm,
 .input-group-sm > .input-group-btn > select[multiple].btn,
 .input-group-sm > .input-group-btn > select[multiple].button-base,
 .input-group-sm > .input-group-btn > select[multiple].button,
+.entry .input-group-sm > .input-group-btn > select[multiple].edit-post-link,
 .entry .input-group-sm > .input-group-btn > select[multiple].more-link,
 .input-group-sm > .input-group-btn > select[multiple].button-small {
   height: auto;
@@ -6162,6 +6177,7 @@ select[multiple].input-sm,
 .input-group-lg > .input-group-btn > .btn,
 .input-group-lg > .input-group-btn > .button-base,
 .input-group-lg > .input-group-btn > .button,
+.entry .input-group-lg > .input-group-btn > .edit-post-link,
 .entry .input-group-lg > .input-group-btn > .more-link,
 .input-group-lg > .input-group-btn > .button-small,
 .header .menu ul .input-group-lg > .input-group-btn > li {
@@ -6177,6 +6193,7 @@ select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > .input-group-btn > select.btn,
 .input-group-lg > .input-group-btn > select.button-base,
 .input-group-lg > .input-group-btn > select.button,
+.entry .input-group-lg > .input-group-btn > select.edit-post-link,
 .entry .input-group-lg > .input-group-btn > select.more-link,
 .input-group-lg > .input-group-btn > select.button-small {
   height: 53px;
@@ -6188,6 +6205,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .input-group-lg > .input-group-btn > textarea.btn,
 .input-group-lg > .input-group-btn > textarea.button-base,
 .input-group-lg > .input-group-btn > textarea.button,
+.entry .input-group-lg > .input-group-btn > textarea.edit-post-link,
 .entry .input-group-lg > .input-group-btn > textarea.more-link,
 .input-group-lg > .input-group-btn > textarea.button-small,
 select[multiple].input-lg,
@@ -6196,6 +6214,7 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-btn > select[multiple].btn,
 .input-group-lg > .input-group-btn > select[multiple].button-base,
 .input-group-lg > .input-group-btn > select[multiple].button,
+.entry .input-group-lg > .input-group-btn > select[multiple].edit-post-link,
 .entry .input-group-lg > .input-group-btn > select[multiple].more-link,
 .input-group-lg > .input-group-btn > select[multiple].button-small {
   height: auto;
@@ -6248,6 +6267,7 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg > .input-group-btn > .button-base + .form-control-feedback,
 .input-group-lg > .input-group-btn > .button + .form-control-feedback,
+.entry .input-group-lg > .input-group-btn > .edit-post-link + .form-control-feedback,
 .entry .input-group-lg > .input-group-btn > .more-link + .form-control-feedback,
 .input-group-lg > .input-group-btn > .button-small + .form-control-feedback,
 .header .menu ul .input-group-lg > .input-group-btn > li + .form-control-feedback {
@@ -6261,6 +6281,7 @@ select[multiple].input-lg,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .input-group-sm > .input-group-btn > .button-base + .form-control-feedback,
 .input-group-sm > .input-group-btn > .button + .form-control-feedback,
+.entry .input-group-sm > .input-group-btn > .edit-post-link + .form-control-feedback,
 .entry .input-group-sm > .input-group-btn > .more-link + .form-control-feedback,
 .input-group-sm > .input-group-btn > .button-small + .form-control-feedback,
 .header .menu ul .input-group-sm > .input-group-btn > li + .form-control-feedback {
@@ -6459,7 +6480,7 @@ select[multiple].input-lg,
   }
 }
 
-.btn, .button-base, .button, .entry .more-link, .button-small, .header .menu ul li {
+.btn, .button-base, .button, .entry .edit-post-link, .entry .more-link, .button-small, .header .menu ul li {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -6479,22 +6500,22 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none;
 }
-.btn:focus, .button-base:focus, .button:focus, .entry .more-link:focus, .button-small:focus, .header .menu ul li:focus, .btn.focus, .focus.button-base, .focus.button, .entry .focus.more-link, .focus.button-small, .header .menu ul li.focus, .btn:active:focus, .button-base:active:focus, .button:active:focus, .entry .more-link:active:focus, .button-small:active:focus, .header .menu ul li:active:focus, .btn:active.focus, .button-base:active.focus, .button:active.focus, .entry .more-link:active.focus, .button-small:active.focus, .header .menu ul li:active.focus, .btn.active:focus, .active.button-base:focus, .active.button:focus, .entry .active.more-link:focus, .active.button-small:focus, .header .menu ul li.active:focus, .btn.active.focus, .active.focus.button-base, .active.focus.button, .entry .active.focus.more-link, .active.focus.button-small, .header .menu ul li.active.focus {
+.btn:focus, .button-base:focus, .button:focus, .entry .edit-post-link:focus, .entry .more-link:focus, .button-small:focus, .header .menu ul li:focus, .btn.focus, .focus.button-base, .focus.button, .entry .focus.edit-post-link, .entry .focus.more-link, .focus.button-small, .header .menu ul li.focus, .btn:active:focus, .button-base:active:focus, .button:active:focus, .entry .edit-post-link:active:focus, .entry .more-link:active:focus, .button-small:active:focus, .header .menu ul li:active:focus, .btn:active.focus, .button-base:active.focus, .button:active.focus, .entry .edit-post-link:active.focus, .entry .more-link:active.focus, .button-small:active.focus, .header .menu ul li:active.focus, .btn.active:focus, .active.button-base:focus, .active.button:focus, .entry .active.edit-post-link:focus, .entry .active.more-link:focus, .active.button-small:focus, .header .menu ul li.active:focus, .btn.active.focus, .active.focus.button-base, .active.focus.button, .entry .active.focus.edit-post-link, .entry .active.focus.more-link, .active.focus.button-small, .header .menu ul li.active.focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover, .button-base:hover, .button:hover, .entry .more-link:hover, .button-small:hover, .header .menu ul li:hover, .btn:focus, .button-base:focus, .button:focus, .entry .more-link:focus, .button-small:focus, .header .menu ul li:focus, .btn.focus, .focus.button-base, .focus.button, .entry .focus.more-link, .focus.button-small, .header .menu ul li.focus {
+.btn:hover, .button-base:hover, .button:hover, .entry .edit-post-link:hover, .entry .more-link:hover, .button-small:hover, .header .menu ul li:hover, .btn:focus, .button-base:focus, .button:focus, .entry .edit-post-link:focus, .entry .more-link:focus, .button-small:focus, .header .menu ul li:focus, .btn.focus, .focus.button-base, .focus.button, .entry .focus.edit-post-link, .entry .focus.more-link, .focus.button-small, .header .menu ul li.focus {
   color: #333;
   text-decoration: none;
 }
-.btn:active, .button-base:active, .button:active, .entry .more-link:active, .button-small:active, .header .menu ul li:active, .btn.active, .active.button-base, .active.button, .entry .active.more-link, .active.button-small, .header .menu ul li.active {
+.btn:active, .button-base:active, .button:active, .entry .edit-post-link:active, .entry .more-link:active, .button-small:active, .header .menu ul li:active, .btn.active, .active.button-base, .active.button, .entry .active.edit-post-link, .entry .active.more-link, .active.button-small, .header .menu ul li.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.btn.disabled, .disabled.button-base, .disabled.button, .entry .disabled.more-link, .disabled.button-small, .header .menu ul li.disabled, .btn[disabled], [disabled].button-base, [disabled].button, .entry [disabled].more-link, [disabled].button-small, .header .menu ul li[disabled], fieldset[disabled] .btn, fieldset[disabled] .button-base, fieldset[disabled] .button, fieldset[disabled] .entry .more-link, .entry fieldset[disabled] .more-link, fieldset[disabled] .button-small, fieldset[disabled] .header .menu ul li, .header .menu ul fieldset[disabled] li {
+.btn.disabled, .disabled.button-base, .disabled.button, .entry .disabled.edit-post-link, .entry .disabled.more-link, .disabled.button-small, .header .menu ul li.disabled, .btn[disabled], [disabled].button-base, [disabled].button, .entry [disabled].edit-post-link, .entry [disabled].more-link, [disabled].button-small, .header .menu ul li[disabled], fieldset[disabled] .btn, fieldset[disabled] .button-base, fieldset[disabled] .button, fieldset[disabled] .entry .edit-post-link, .entry fieldset[disabled] .edit-post-link, fieldset[disabled] .entry .more-link, .entry fieldset[disabled] .more-link, fieldset[disabled] .button-small, fieldset[disabled] .header .menu ul li, .header .menu ul fieldset[disabled] li {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -6658,21 +6679,21 @@ select[multiple].input-lg,
   text-decoration: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .button-base, .btn-group-lg > .button, .btn-group-lg > .button-small, .header .menu ul .btn-group-lg > li, .button, .entry .more-link {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .button-base, .btn-group-lg > .button, .btn-group-lg > .button-small, .header .menu ul .btn-group-lg > li, .button, .entry .edit-post-link, .entry .more-link {
   padding: 10px 16px;
   font-size: 23px;
   line-height: 1.33333;
   border-radius: 6px;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .button-base, .btn-group-sm > .button, .entry .btn-group-sm > .more-link, .btn-group-sm > .button-small, .button-small, .header .menu ul li {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .button-base, .btn-group-sm > .button, .entry .btn-group-sm > .edit-post-link, .entry .btn-group-sm > .more-link, .btn-group-sm > .button-small, .button-small, .header .menu ul li {
   padding: 5px 10px;
   font-size: 16px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
-.btn-xs, .btn-group-xs > .btn, .btn-group-xs > .button-base, .btn-group-xs > .button, .entry .btn-group-xs > .more-link, .btn-group-xs > .button-small, .header .menu ul .btn-group-xs > li {
+.btn-xs, .btn-group-xs > .btn, .btn-group-xs > .button-base, .btn-group-xs > .button, .entry .btn-group-xs > .edit-post-link, .entry .btn-group-xs > .more-link, .btn-group-xs > .button-small, .header .menu ul .btn-group-xs > li {
   padding: 1px 5px;
   font-size: 16px;
   line-height: 1.5;
@@ -6887,48 +6908,55 @@ tbody.collapse.in {
   display: inline-block;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .button-base, .btn-group > .button, .entry .btn-group > .more-link, .btn-group > .button-small, .header .menu ul .btn-group > li,
+.btn-group > .btn, .btn-group > .button-base, .btn-group > .button, .entry .btn-group > .edit-post-link, .entry .btn-group > .more-link, .btn-group > .button-small, .header .menu ul .btn-group > li,
 .btn-group-vertical > .btn,
 .btn-group-vertical > .button-base,
 .btn-group-vertical > .button,
+.entry .btn-group-vertical > .edit-post-link,
 .entry .btn-group-vertical > .more-link,
 .btn-group-vertical > .button-small,
 .header .menu ul .btn-group-vertical > li {
   position: relative;
   float: left;
 }
-.btn-group > .btn:hover, .btn-group > .button-base:hover, .btn-group > .button:hover, .entry .btn-group > .more-link:hover, .btn-group > .button-small:hover, .header .menu ul .btn-group > li:hover, .btn-group > .btn:focus, .btn-group > .button-base:focus, .btn-group > .button:focus, .entry .btn-group > .more-link:focus, .btn-group > .button-small:focus, .header .menu ul .btn-group > li:focus, .btn-group > .btn:active, .btn-group > .button-base:active, .btn-group > .button:active, .entry .btn-group > .more-link:active, .btn-group > .button-small:active, .header .menu ul .btn-group > li:active, .btn-group > .btn.active, .btn-group > .active.button-base, .btn-group > .active.button, .entry .btn-group > .active.more-link, .btn-group > .active.button-small, .header .menu ul .btn-group > li.active,
+.btn-group > .btn:hover, .btn-group > .button-base:hover, .btn-group > .button:hover, .entry .btn-group > .edit-post-link:hover, .entry .btn-group > .more-link:hover, .btn-group > .button-small:hover, .header .menu ul .btn-group > li:hover, .btn-group > .btn:focus, .btn-group > .button-base:focus, .btn-group > .button:focus, .entry .btn-group > .edit-post-link:focus, .entry .btn-group > .more-link:focus, .btn-group > .button-small:focus, .header .menu ul .btn-group > li:focus, .btn-group > .btn:active, .btn-group > .button-base:active, .btn-group > .button:active, .entry .btn-group > .edit-post-link:active, .entry .btn-group > .more-link:active, .btn-group > .button-small:active, .header .menu ul .btn-group > li:active, .btn-group > .btn.active, .btn-group > .active.button-base, .btn-group > .active.button, .entry .btn-group > .active.edit-post-link, .entry .btn-group > .active.more-link, .btn-group > .active.button-small, .header .menu ul .btn-group > li.active,
 .btn-group-vertical > .btn:hover,
 .btn-group-vertical > .button-base:hover,
 .btn-group-vertical > .button:hover,
+.entry .btn-group-vertical > .edit-post-link:hover,
 .entry .btn-group-vertical > .more-link:hover,
 .btn-group-vertical > .button-small:hover,
 .header .menu ul .btn-group-vertical > li:hover,
 .btn-group-vertical > .btn:focus,
 .btn-group-vertical > .button-base:focus,
 .btn-group-vertical > .button:focus,
+.entry .btn-group-vertical > .edit-post-link:focus,
 .entry .btn-group-vertical > .more-link:focus,
 .btn-group-vertical > .button-small:focus,
 .header .menu ul .btn-group-vertical > li:focus,
 .btn-group-vertical > .btn:active,
 .btn-group-vertical > .button-base:active,
 .btn-group-vertical > .button:active,
+.entry .btn-group-vertical > .edit-post-link:active,
 .entry .btn-group-vertical > .more-link:active,
 .btn-group-vertical > .button-small:active,
 .header .menu ul .btn-group-vertical > li:active,
 .btn-group-vertical > .btn.active,
 .btn-group-vertical > .active.button-base,
 .btn-group-vertical > .active.button,
+.entry .btn-group-vertical > .active.edit-post-link,
 .entry .btn-group-vertical > .active.more-link,
 .btn-group-vertical > .active.button-small,
 .header .menu ul .btn-group-vertical > li.active {
   z-index: 2;
 }
 
-.btn-group .btn + .btn, .btn-group .button-base + .btn, .btn-group .button + .btn, .btn-group .entry .more-link + .btn, .entry .btn-group .more-link + .btn, .btn-group .button-small + .btn, .btn-group .header .menu ul li + .btn, .header .menu ul .btn-group li + .btn, .btn-group .btn + .button-base, .btn-group .button-base + .button-base, .btn-group .button + .button-base, .btn-group .entry .more-link + .button-base, .entry .btn-group .more-link + .button-base, .btn-group .button-small + .button-base, .btn-group .header .menu ul li + .button-base, .header .menu ul .btn-group li + .button-base, .btn-group .btn + .button, .btn-group .button-base + .button, .btn-group .button + .button, .btn-group .entry .more-link + .button, .entry .btn-group .more-link + .button, .btn-group .button-small + .button, .btn-group .header .menu ul li + .button, .header .menu ul .btn-group li + .button, .btn-group .entry .btn + .more-link, .entry .btn-group .btn + .more-link, .btn-group .entry .button-base + .more-link, .entry .btn-group .button-base + .more-link, .btn-group .entry .button + .more-link, .entry .btn-group .button + .more-link, .btn-group .entry .more-link + .more-link, .entry .btn-group .more-link + .more-link, .btn-group .entry .button-small + .more-link, .entry .btn-group .button-small + .more-link, .btn-group .header .menu ul .entry li + .more-link, .entry .btn-group .header .menu ul li + .more-link, .header .menu ul .btn-group .entry li + .more-link, .entry .header .menu ul .btn-group li + .more-link, .btn-group .btn + .button-small, .btn-group .button-base + .button-small, .btn-group .button + .button-small, .btn-group .entry .more-link + .button-small, .entry .btn-group .more-link + .button-small, .btn-group .button-small + .button-small, .btn-group .header .menu ul li + .button-small, .header .menu ul .btn-group li + .button-small, .btn-group .header .menu ul .btn + li, .header .menu ul .btn-group .btn + li, .btn-group .header .menu ul .button-base + li, .header .menu ul .btn-group .button-base + li, .btn-group .header .menu ul .button + li, .header .menu ul .btn-group .button + li, .btn-group .entry .header .menu ul .more-link + li, .header .menu ul .btn-group .entry .more-link + li, .entry .btn-group .header .menu ul .more-link + li, .header .menu ul .entry .btn-group .more-link + li, .btn-group .header .menu ul .button-small + li, .header .menu ul .btn-group .button-small + li, .btn-group .header .menu ul li + li, .header .menu ul .btn-group li + li,
+.btn-group .btn + .btn, .btn-group .button-base + .btn, .btn-group .button + .btn, .btn-group .entry .edit-post-link + .btn, .entry .btn-group .edit-post-link + .btn, .btn-group .entry .more-link + .btn, .entry .btn-group .more-link + .btn, .btn-group .button-small + .btn, .btn-group .header .menu ul li + .btn, .header .menu ul .btn-group li + .btn, .btn-group .btn + .button-base, .btn-group .button-base + .button-base, .btn-group .button + .button-base, .btn-group .entry .edit-post-link + .button-base, .entry .btn-group .edit-post-link + .button-base, .btn-group .entry .more-link + .button-base, .entry .btn-group .more-link + .button-base, .btn-group .button-small + .button-base, .btn-group .header .menu ul li + .button-base, .header .menu ul .btn-group li + .button-base, .btn-group .btn + .button, .btn-group .button-base + .button, .btn-group .button + .button, .btn-group .entry .edit-post-link + .button, .entry .btn-group .edit-post-link + .button, .btn-group .entry .more-link + .button, .entry .btn-group .more-link + .button, .btn-group .button-small + .button, .btn-group .header .menu ul li + .button, .header .menu ul .btn-group li + .button, .btn-group .entry .btn + .edit-post-link, .entry .btn-group .btn + .edit-post-link, .btn-group .entry .button-base + .edit-post-link, .entry .btn-group .button-base + .edit-post-link, .btn-group .entry .button + .edit-post-link, .entry .btn-group .button + .edit-post-link, .btn-group .entry .edit-post-link + .edit-post-link, .entry .btn-group .edit-post-link + .edit-post-link, .btn-group .entry .more-link + .edit-post-link, .entry .btn-group .more-link + .edit-post-link, .btn-group .entry .button-small + .edit-post-link, .entry .btn-group .button-small + .edit-post-link, .btn-group .header .menu ul .entry li + .edit-post-link, .entry .btn-group .header .menu ul li + .edit-post-link, .header .menu ul .btn-group .entry li + .edit-post-link, .entry .header .menu ul .btn-group li + .edit-post-link, .btn-group .entry .btn + .more-link, .entry .btn-group .btn + .more-link, .btn-group .entry .button-base + .more-link, .entry .btn-group .button-base + .more-link, .btn-group .entry .button + .more-link, .entry .btn-group .button + .more-link, .btn-group .entry .edit-post-link + .more-link, .entry .btn-group .edit-post-link + .more-link, .btn-group .entry .more-link + .more-link, .entry .btn-group .more-link + .more-link, .btn-group .entry .button-small + .more-link, .entry .btn-group .button-small + .more-link, .btn-group .header .menu ul .entry li + .more-link, .entry .btn-group .header .menu ul li + .more-link, .header .menu ul .btn-group .entry li + .more-link, .entry .header .menu ul .btn-group li + .more-link, .btn-group .btn + .button-small, .btn-group .button-base + .button-small, .btn-group .button + .button-small, .btn-group .entry .edit-post-link + .button-small, .entry .btn-group .edit-post-link + .button-small, .btn-group .entry .more-link + .button-small, .entry .btn-group .more-link + .button-small, .btn-group .button-small + .button-small, .btn-group .header .menu ul li + .button-small, .header .menu ul .btn-group li + .button-small, .btn-group .header .menu ul .btn + li, .header .menu ul .btn-group .btn + li, .btn-group .header .menu ul .button-base + li, .header .menu ul .btn-group .button-base + li, .btn-group .header .menu ul .button + li, .header .menu ul .btn-group .button + li, .btn-group .entry .header .menu ul .edit-post-link + li, .header .menu ul .btn-group .entry .edit-post-link + li, .entry .btn-group .header .menu ul .edit-post-link + li, .header .menu ul .entry .btn-group .edit-post-link + li, .btn-group .entry .header .menu ul .more-link + li, .header .menu ul .btn-group .entry .more-link + li, .entry .btn-group .header .menu ul .more-link + li, .header .menu ul .entry .btn-group .more-link + li, .btn-group .header .menu ul .button-small + li, .header .menu ul .btn-group .button-small + li, .btn-group .header .menu ul li + li, .header .menu ul .btn-group li + li,
 .btn-group .btn + .btn-group,
 .btn-group .button-base + .btn-group,
 .btn-group .button + .btn-group,
+.btn-group .entry .edit-post-link + .btn-group,
+.entry .btn-group .edit-post-link + .btn-group,
 .btn-group .entry .more-link + .btn-group,
 .entry .btn-group .more-link + .btn-group,
 .btn-group .button-small + .btn-group,
@@ -6937,6 +6965,8 @@ tbody.collapse.in {
 .btn-group .btn-group + .btn,
 .btn-group .btn-group + .button-base,
 .btn-group .btn-group + .button,
+.btn-group .entry .btn-group + .edit-post-link,
+.entry .btn-group .btn-group + .edit-post-link,
 .btn-group .entry .btn-group + .more-link,
 .entry .btn-group .btn-group + .more-link,
 .btn-group .btn-group + .button-small,
@@ -6960,25 +6990,25 @@ tbody.collapse.in {
 .btn-toolbar .input-group {
   float: left;
 }
-.btn-toolbar > .btn, .btn-toolbar > .button-base, .btn-toolbar > .button, .entry .btn-toolbar > .more-link, .btn-toolbar > .button-small, .header .menu ul .btn-toolbar > li,
+.btn-toolbar > .btn, .btn-toolbar > .button-base, .btn-toolbar > .button, .entry .btn-toolbar > .edit-post-link, .entry .btn-toolbar > .more-link, .btn-toolbar > .button-small, .header .menu ul .btn-toolbar > li,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .button-base:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .button:not(:first-child):not(:last-child):not(.dropdown-toggle), .entry .btn-group > .more-link:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .button-small:not(:first-child):not(:last-child):not(.dropdown-toggle), .header .menu ul .btn-group > li:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .button-base:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .button:not(:first-child):not(:last-child):not(.dropdown-toggle), .entry .btn-group > .edit-post-link:not(:first-child):not(:last-child):not(.dropdown-toggle), .entry .btn-group > .more-link:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .button-small:not(:first-child):not(:last-child):not(.dropdown-toggle), .header .menu ul .btn-group > li:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, .btn-group > .button-base:first-child, .btn-group > .button:first-child, .entry .btn-group > .more-link:first-child, .btn-group > .button-small:first-child, .header .menu ul .btn-group > li:first-child {
+.btn-group > .btn:first-child, .btn-group > .button-base:first-child, .btn-group > .button:first-child, .entry .btn-group > .edit-post-link:first-child, .entry .btn-group > .more-link:first-child, .btn-group > .button-small:first-child, .header .menu ul .btn-group > li:first-child {
   margin-left: 0;
 }
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .button-base:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .button:first-child:not(:last-child):not(.dropdown-toggle), .entry .btn-group > .more-link:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .button-small:first-child:not(:last-child):not(.dropdown-toggle), .header .menu ul .btn-group > li:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .button-base:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .button:first-child:not(:last-child):not(.dropdown-toggle), .entry .btn-group > .edit-post-link:first-child:not(:last-child):not(.dropdown-toggle), .entry .btn-group > .more-link:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .button-small:first-child:not(:last-child):not(.dropdown-toggle), .header .menu ul .btn-group > li:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn:last-child:not(:first-child), .btn-group > .button-base:last-child:not(:first-child), .btn-group > .button:last-child:not(:first-child), .entry .btn-group > .more-link:last-child:not(:first-child), .btn-group > .button-small:last-child:not(:first-child), .header .menu ul .btn-group > li:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .button-base:last-child:not(:first-child), .btn-group > .button:last-child:not(:first-child), .entry .btn-group > .edit-post-link:last-child:not(:first-child), .entry .btn-group > .more-link:last-child:not(:first-child), .btn-group > .button-small:last-child:not(:first-child), .header .menu ul .btn-group > li:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -6988,17 +7018,17 @@ tbody.collapse.in {
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > .button-base, .btn-group > .btn-group:not(:first-child):not(:last-child) > .button, .entry .btn-group > .btn-group:not(:first-child):not(:last-child) > .more-link, .btn-group > .btn-group:not(:first-child):not(:last-child) > .button-small, .header .menu ul .btn-group > .btn-group:not(:first-child):not(:last-child) > li {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > .button-base, .btn-group > .btn-group:not(:first-child):not(:last-child) > .button, .entry .btn-group > .btn-group:not(:first-child):not(:last-child) > .edit-post-link, .entry .btn-group > .btn-group:not(:first-child):not(:last-child) > .more-link, .btn-group > .btn-group:not(:first-child):not(:last-child) > .button-small, .header .menu ul .btn-group > .btn-group:not(:first-child):not(:last-child) > li {
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .button-base:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .button:last-child, .entry .btn-group > .btn-group:first-child:not(:last-child) > .more-link:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .button-small:last-child, .header .menu ul .btn-group > .btn-group:first-child:not(:last-child) > li:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .button-base:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .button:last-child, .entry .btn-group > .btn-group:first-child:not(:last-child) > .edit-post-link:last-child, .entry .btn-group > .btn-group:first-child:not(:last-child) > .more-link:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .button-small:last-child, .header .menu ul .btn-group > .btn-group:first-child:not(:last-child) > li:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .button-base:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .button:first-child, .entry .btn-group > .btn-group:last-child:not(:first-child) > .more-link:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .button-small:first-child, .header .menu ul .btn-group > .btn-group:last-child:not(:first-child) > li:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .button-base:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .button:first-child, .entry .btn-group > .btn-group:last-child:not(:first-child) > .edit-post-link:first-child, .entry .btn-group > .btn-group:last-child:not(:first-child) > .more-link:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .button-small:first-child, .header .menu ul .btn-group > .btn-group:last-child:not(:first-child) > li:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -7008,12 +7038,12 @@ tbody.collapse.in {
   outline: 0;
 }
 
-.btn-group > .btn + .dropdown-toggle, .btn-group > .button-base + .dropdown-toggle, .btn-group > .button + .dropdown-toggle, .entry .btn-group > .more-link + .dropdown-toggle, .btn-group > .button-small + .dropdown-toggle, .header .menu ul .btn-group > li + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .btn-group > .button-base + .dropdown-toggle, .btn-group > .button + .dropdown-toggle, .entry .btn-group > .edit-post-link + .dropdown-toggle, .entry .btn-group > .more-link + .dropdown-toggle, .btn-group > .button-small + .dropdown-toggle, .header .menu ul .btn-group > li + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .btn-group-lg.btn-group > .button-base + .dropdown-toggle, .btn-group-lg.btn-group > .button-small + .dropdown-toggle, .header .menu ul .btn-group-lg.btn-group > li + .dropdown-toggle, .btn-group > .button + .dropdown-toggle, .entry .btn-group > .more-link + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .btn-group-lg.btn-group > .button-base + .dropdown-toggle, .btn-group-lg.btn-group > .button-small + .dropdown-toggle, .header .menu ul .btn-group-lg.btn-group > li + .dropdown-toggle, .btn-group > .button + .dropdown-toggle, .entry .btn-group > .edit-post-link + .dropdown-toggle, .entry .btn-group > .more-link + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -7027,24 +7057,25 @@ tbody.collapse.in {
   box-shadow: none;
 }
 
-.btn .caret, .button-base .caret, .button .caret, .entry .more-link .caret, .button-small .caret, .header .menu ul li .caret {
+.btn .caret, .button-base .caret, .button .caret, .entry .edit-post-link .caret, .entry .more-link .caret, .button-small .caret, .header .menu ul li .caret {
   margin-left: 0;
 }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .btn-group-lg > .button-base .caret, .btn-group-lg > .button-small .caret, .header .menu ul .btn-group-lg > li .caret, .button .caret, .entry .more-link .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .btn-group-lg > .button-base .caret, .btn-group-lg > .button-small .caret, .header .menu ul .btn-group-lg > li .caret, .button .caret, .entry .edit-post-link .caret, .entry .more-link .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .btn-group-lg > .button-base .caret, .dropup .btn-group-lg > .button-small .caret, .dropup .header .menu ul .btn-group-lg > li .caret, .header .menu ul .dropup .btn-group-lg > li .caret, .dropup .button .caret, .dropup .entry .more-link .caret, .entry .dropup .more-link .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .btn-group-lg > .button-base .caret, .dropup .btn-group-lg > .button-small .caret, .dropup .header .menu ul .btn-group-lg > li .caret, .header .menu ul .dropup .btn-group-lg > li .caret, .dropup .button .caret, .dropup .entry .edit-post-link .caret, .entry .dropup .edit-post-link .caret, .dropup .entry .more-link .caret, .entry .dropup .more-link .caret {
   border-width: 0 5px 5px;
 }
 
-.btn-group-vertical > .btn, .btn-group-vertical > .button-base, .btn-group-vertical > .button, .entry .btn-group-vertical > .more-link, .btn-group-vertical > .button-small, .header .menu ul .btn-group-vertical > li,
+.btn-group-vertical > .btn, .btn-group-vertical > .button-base, .btn-group-vertical > .button, .entry .btn-group-vertical > .edit-post-link, .entry .btn-group-vertical > .more-link, .btn-group-vertical > .button-small, .header .menu ul .btn-group-vertical > li,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
 .btn-group-vertical > .btn-group > .button-base,
 .btn-group-vertical > .btn-group > .button,
+.entry .btn-group-vertical > .btn-group > .edit-post-link,
 .entry .btn-group-vertical > .btn-group > .more-link,
 .btn-group-vertical > .btn-group > .button-small,
 .header .menu ul .btn-group-vertical > .btn-group > li {
@@ -7060,19 +7091,21 @@ tbody.collapse.in {
 .btn-group-vertical > .btn-group:after {
   clear: both;
 }
-.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > .button-base, .btn-group-vertical > .btn-group > .button, .entry .btn-group-vertical > .btn-group > .more-link, .btn-group-vertical > .btn-group > .button-small, .header .menu ul .btn-group-vertical > .btn-group > li {
+.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > .button-base, .btn-group-vertical > .btn-group > .button, .entry .btn-group-vertical > .btn-group > .edit-post-link, .entry .btn-group-vertical > .btn-group > .more-link, .btn-group-vertical > .btn-group > .button-small, .header .menu ul .btn-group-vertical > .btn-group > li {
   float: none;
 }
-.btn-group-vertical > .btn + .btn, .btn-group-vertical > .button-base + .btn, .btn-group-vertical > .button + .btn, .entry .btn-group-vertical > .more-link + .btn, .btn-group-vertical > .button-small + .btn, .header .menu ul .btn-group-vertical > li + .btn, .btn-group-vertical > .btn + .button-base, .btn-group-vertical > .button-base + .button-base, .btn-group-vertical > .button + .button-base, .entry .btn-group-vertical > .more-link + .button-base, .btn-group-vertical > .button-small + .button-base, .header .menu ul .btn-group-vertical > li + .button-base, .btn-group-vertical > .btn + .button, .btn-group-vertical > .button-base + .button, .btn-group-vertical > .button + .button, .entry .btn-group-vertical > .more-link + .button, .btn-group-vertical > .button-small + .button, .header .menu ul .btn-group-vertical > li + .button, .entry .btn-group-vertical > .btn + .more-link, .entry .btn-group-vertical > .button-base + .more-link, .entry .btn-group-vertical > .button + .more-link, .entry .btn-group-vertical > .more-link + .more-link, .entry .btn-group-vertical > .button-small + .more-link, .header .menu ul .entry .btn-group-vertical > li + .more-link, .entry .header .menu ul .btn-group-vertical > li + .more-link, .btn-group-vertical > .btn + .button-small, .btn-group-vertical > .button-base + .button-small, .btn-group-vertical > .button + .button-small, .entry .btn-group-vertical > .more-link + .button-small, .btn-group-vertical > .button-small + .button-small, .header .menu ul .btn-group-vertical > li + .button-small, .header .menu ul .btn-group-vertical > .btn + li, .header .menu ul .btn-group-vertical > .button-base + li, .header .menu ul .btn-group-vertical > .button + li, .entry .header .menu ul .btn-group-vertical > .more-link + li, .header .menu ul .entry .btn-group-vertical > .more-link + li, .header .menu ul .btn-group-vertical > .button-small + li, .header .menu ul .btn-group-vertical > li + li,
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > .button-base + .btn, .btn-group-vertical > .button + .btn, .entry .btn-group-vertical > .edit-post-link + .btn, .entry .btn-group-vertical > .more-link + .btn, .btn-group-vertical > .button-small + .btn, .header .menu ul .btn-group-vertical > li + .btn, .btn-group-vertical > .btn + .button-base, .btn-group-vertical > .button-base + .button-base, .btn-group-vertical > .button + .button-base, .entry .btn-group-vertical > .edit-post-link + .button-base, .entry .btn-group-vertical > .more-link + .button-base, .btn-group-vertical > .button-small + .button-base, .header .menu ul .btn-group-vertical > li + .button-base, .btn-group-vertical > .btn + .button, .btn-group-vertical > .button-base + .button, .btn-group-vertical > .button + .button, .entry .btn-group-vertical > .edit-post-link + .button, .entry .btn-group-vertical > .more-link + .button, .btn-group-vertical > .button-small + .button, .header .menu ul .btn-group-vertical > li + .button, .entry .btn-group-vertical > .btn + .edit-post-link, .entry .btn-group-vertical > .button-base + .edit-post-link, .entry .btn-group-vertical > .button + .edit-post-link, .entry .btn-group-vertical > .edit-post-link + .edit-post-link, .entry .btn-group-vertical > .more-link + .edit-post-link, .entry .btn-group-vertical > .button-small + .edit-post-link, .header .menu ul .entry .btn-group-vertical > li + .edit-post-link, .entry .header .menu ul .btn-group-vertical > li + .edit-post-link, .entry .btn-group-vertical > .btn + .more-link, .entry .btn-group-vertical > .button-base + .more-link, .entry .btn-group-vertical > .button + .more-link, .entry .btn-group-vertical > .edit-post-link + .more-link, .entry .btn-group-vertical > .more-link + .more-link, .entry .btn-group-vertical > .button-small + .more-link, .header .menu ul .entry .btn-group-vertical > li + .more-link, .entry .header .menu ul .btn-group-vertical > li + .more-link, .btn-group-vertical > .btn + .button-small, .btn-group-vertical > .button-base + .button-small, .btn-group-vertical > .button + .button-small, .entry .btn-group-vertical > .edit-post-link + .button-small, .entry .btn-group-vertical > .more-link + .button-small, .btn-group-vertical > .button-small + .button-small, .header .menu ul .btn-group-vertical > li + .button-small, .header .menu ul .btn-group-vertical > .btn + li, .header .menu ul .btn-group-vertical > .button-base + li, .header .menu ul .btn-group-vertical > .button + li, .entry .header .menu ul .btn-group-vertical > .edit-post-link + li, .header .menu ul .entry .btn-group-vertical > .edit-post-link + li, .entry .header .menu ul .btn-group-vertical > .more-link + li, .header .menu ul .entry .btn-group-vertical > .more-link + li, .header .menu ul .btn-group-vertical > .button-small + li, .header .menu ul .btn-group-vertical > li + li,
 .btn-group-vertical > .btn + .btn-group,
 .btn-group-vertical > .button-base + .btn-group,
 .btn-group-vertical > .button + .btn-group,
+.entry .btn-group-vertical > .edit-post-link + .btn-group,
 .entry .btn-group-vertical > .more-link + .btn-group,
 .btn-group-vertical > .button-small + .btn-group,
 .header .menu ul .btn-group-vertical > li + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
 .btn-group-vertical > .btn-group + .button-base,
 .btn-group-vertical > .btn-group + .button,
+.entry .btn-group-vertical > .btn-group + .edit-post-link,
 .entry .btn-group-vertical > .btn-group + .more-link,
 .btn-group-vertical > .btn-group + .button-small,
 .header .menu ul .btn-group-vertical > .btn-group + li,
@@ -7081,31 +7114,31 @@ tbody.collapse.in {
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > .button-base:not(:first-child):not(:last-child), .btn-group-vertical > .button:not(:first-child):not(:last-child), .entry .btn-group-vertical > .more-link:not(:first-child):not(:last-child), .btn-group-vertical > .button-small:not(:first-child):not(:last-child), .header .menu ul .btn-group-vertical > li:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > .button-base:not(:first-child):not(:last-child), .btn-group-vertical > .button:not(:first-child):not(:last-child), .entry .btn-group-vertical > .edit-post-link:not(:first-child):not(:last-child), .entry .btn-group-vertical > .more-link:not(:first-child):not(:last-child), .btn-group-vertical > .button-small:not(:first-child):not(:last-child), .header .menu ul .btn-group-vertical > li:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
-.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > .button-base:first-child:not(:last-child), .btn-group-vertical > .button:first-child:not(:last-child), .entry .btn-group-vertical > .more-link:first-child:not(:last-child), .btn-group-vertical > .button-small:first-child:not(:last-child), .header .menu ul .btn-group-vertical > li:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > .button-base:first-child:not(:last-child), .btn-group-vertical > .button:first-child:not(:last-child), .entry .btn-group-vertical > .edit-post-link:first-child:not(:last-child), .entry .btn-group-vertical > .more-link:first-child:not(:last-child), .btn-group-vertical > .button-small:first-child:not(:last-child), .header .menu ul .btn-group-vertical > li:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > .button-base:last-child:not(:first-child), .btn-group-vertical > .button:last-child:not(:first-child), .entry .btn-group-vertical > .more-link:last-child:not(:first-child), .btn-group-vertical > .button-small:last-child:not(:first-child), .header .menu ul .btn-group-vertical > li:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > .button-base:last-child:not(:first-child), .btn-group-vertical > .button:last-child:not(:first-child), .entry .btn-group-vertical > .edit-post-link:last-child:not(:first-child), .entry .btn-group-vertical > .more-link:last-child:not(:first-child), .btn-group-vertical > .button-small:last-child:not(:first-child), .header .menu ul .btn-group-vertical > li:last-child:not(:first-child) {
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button-base, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button, .entry .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .more-link, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button-small, .header .menu ul .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > li {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button-base, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button, .entry .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .edit-post-link, .entry .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .more-link, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button-small, .header .menu ul .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > li {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button-base:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button:last-child, .entry .btn-group-vertical > .btn-group:first-child:not(:last-child) > .more-link:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button-small:last-child, .header .menu ul .btn-group-vertical > .btn-group:first-child:not(:last-child) > li:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button-base:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button:last-child, .entry .btn-group-vertical > .btn-group:first-child:not(:last-child) > .edit-post-link:last-child, .entry .btn-group-vertical > .btn-group:first-child:not(:last-child) > .more-link:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button-small:last-child, .header .menu ul .btn-group-vertical > .btn-group:first-child:not(:last-child) > li:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button-base:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button:first-child, .entry .btn-group-vertical > .btn-group:last-child:not(:first-child) > .more-link:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button-small:first-child, .header .menu ul .btn-group-vertical > .btn-group:last-child:not(:first-child) > li:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button-base:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button:first-child, .entry .btn-group-vertical > .btn-group:last-child:not(:first-child) > .edit-post-link:first-child, .entry .btn-group-vertical > .btn-group:last-child:not(:first-child) > .more-link:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button-small:first-child, .header .menu ul .btn-group-vertical > .btn-group:last-child:not(:first-child) > li:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -7116,35 +7149,38 @@ tbody.collapse.in {
   table-layout: fixed;
   border-collapse: separate;
 }
-.btn-group-justified > .btn, .btn-group-justified > .button-base, .btn-group-justified > .button, .entry .btn-group-justified > .more-link, .btn-group-justified > .button-small, .header .menu ul .btn-group-justified > li,
+.btn-group-justified > .btn, .btn-group-justified > .button-base, .btn-group-justified > .button, .entry .btn-group-justified > .edit-post-link, .entry .btn-group-justified > .more-link, .btn-group-justified > .button-small, .header .menu ul .btn-group-justified > li,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
-.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .button-base, .btn-group-justified > .btn-group .button, .btn-group-justified > .btn-group .entry .more-link, .entry .btn-group-justified > .btn-group .more-link, .btn-group-justified > .btn-group .button-small, .btn-group-justified > .btn-group .header .menu ul li, .header .menu ul .btn-group-justified > .btn-group li {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .button-base, .btn-group-justified > .btn-group .button, .btn-group-justified > .btn-group .entry .edit-post-link, .entry .btn-group-justified > .btn-group .edit-post-link, .btn-group-justified > .btn-group .entry .more-link, .entry .btn-group-justified > .btn-group .more-link, .btn-group-justified > .btn-group .button-small, .btn-group-justified > .btn-group .header .menu ul li, .header .menu ul .btn-group-justified > .btn-group li {
   width: 100%;
 }
 .btn-group-justified > .btn-group .dropdown-menu {
   left: auto;
 }
 
-[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .button-base input[type="radio"], [data-toggle="buttons"] > .button input[type="radio"], .entry [data-toggle="buttons"] > .more-link input[type="radio"], [data-toggle="buttons"] > .button-small input[type="radio"], .header .menu ul [data-toggle="buttons"] > li input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .button-base input[type="radio"], [data-toggle="buttons"] > .button input[type="radio"], .entry [data-toggle="buttons"] > .edit-post-link input[type="radio"], .entry [data-toggle="buttons"] > .more-link input[type="radio"], [data-toggle="buttons"] > .button-small input[type="radio"], .header .menu ul [data-toggle="buttons"] > li input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
 [data-toggle="buttons"] > .button-base input[type="checkbox"],
 [data-toggle="buttons"] > .button input[type="checkbox"],
+.entry [data-toggle="buttons"] > .edit-post-link input[type="checkbox"],
 .entry [data-toggle="buttons"] > .more-link input[type="checkbox"],
 [data-toggle="buttons"] > .button-small input[type="checkbox"],
 .header .menu ul [data-toggle="buttons"] > li input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .button-base input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .button input[type="radio"],
+.entry [data-toggle="buttons"] > .btn-group > .edit-post-link input[type="radio"],
 .entry [data-toggle="buttons"] > .btn-group > .more-link input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .button-small input[type="radio"],
 .header .menu ul [data-toggle="buttons"] > .btn-group > li input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .button-base input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .button input[type="checkbox"],
+.entry [data-toggle="buttons"] > .btn-group > .edit-post-link input[type="checkbox"],
 .entry [data-toggle="buttons"] > .btn-group > .more-link input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .button-small input[type="checkbox"],
 .header .menu ul [data-toggle="buttons"] > .btn-group > li input[type="checkbox"] {
@@ -7205,6 +7241,7 @@ tbody.collapse.in {
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
 .input-group-sm > .input-group-btn > .input-group-addon.button-base,
 .input-group-sm > .input-group-btn > .input-group-addon.button,
+.entry .input-group-sm > .input-group-btn > .input-group-addon.edit-post-link,
 .entry .input-group-sm > .input-group-btn > .input-group-addon.more-link,
 .input-group-sm > .input-group-btn > .input-group-addon.button-small,
 .header .menu ul .input-group-sm > .input-group-btn > li.input-group-addon {
@@ -7217,6 +7254,7 @@ tbody.collapse.in {
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
 .input-group-lg > .input-group-btn > .input-group-addon.button-base,
 .input-group-lg > .input-group-btn > .input-group-addon.button,
+.entry .input-group-lg > .input-group-btn > .input-group-addon.edit-post-link,
 .entry .input-group-lg > .input-group-btn > .input-group-addon.more-link,
 .input-group-lg > .input-group-btn > .input-group-addon.button-small,
 .header .menu ul .input-group-lg > .input-group-btn > li.input-group-addon {
@@ -7234,12 +7272,14 @@ tbody.collapse.in {
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .button-base,
 .input-group-btn:first-child > .button,
+.entry .input-group-btn:first-child > .edit-post-link,
 .entry .input-group-btn:first-child > .more-link,
 .input-group-btn:first-child > .button-small,
 .header .menu ul .input-group-btn:first-child > li,
 .input-group-btn:first-child > .btn-group > .btn,
 .input-group-btn:first-child > .btn-group > .button-base,
 .input-group-btn:first-child > .btn-group > .button,
+.entry .input-group-btn:first-child > .btn-group > .edit-post-link,
 .entry .input-group-btn:first-child > .btn-group > .more-link,
 .input-group-btn:first-child > .btn-group > .button-small,
 .header .menu ul .input-group-btn:first-child > .btn-group > li,
@@ -7247,12 +7287,14 @@ tbody.collapse.in {
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .button-base:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .button:not(:last-child):not(.dropdown-toggle),
+.entry .input-group-btn:last-child > .edit-post-link:not(:last-child):not(.dropdown-toggle),
 .entry .input-group-btn:last-child > .more-link:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .button-small:not(:last-child):not(.dropdown-toggle),
 .header .menu ul .input-group-btn:last-child > li:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
 .input-group-btn:last-child > .btn-group:not(:last-child) > .button-base,
 .input-group-btn:last-child > .btn-group:not(:last-child) > .button,
+.entry .input-group-btn:last-child > .btn-group:not(:last-child) > .edit-post-link,
 .entry .input-group-btn:last-child > .btn-group:not(:last-child) > .more-link,
 .input-group-btn:last-child > .btn-group:not(:last-child) > .button-small,
 .header .menu ul .input-group-btn:last-child > .btn-group:not(:last-child) > li {
@@ -7269,12 +7311,14 @@ tbody.collapse.in {
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .button-base,
 .input-group-btn:last-child > .button,
+.entry .input-group-btn:last-child > .edit-post-link,
 .entry .input-group-btn:last-child > .more-link,
 .input-group-btn:last-child > .button-small,
 .header .menu ul .input-group-btn:last-child > li,
 .input-group-btn:last-child > .btn-group > .btn,
 .input-group-btn:last-child > .btn-group > .button-base,
 .input-group-btn:last-child > .btn-group > .button,
+.entry .input-group-btn:last-child > .btn-group > .edit-post-link,
 .entry .input-group-btn:last-child > .btn-group > .more-link,
 .input-group-btn:last-child > .btn-group > .button-small,
 .header .menu ul .input-group-btn:last-child > .btn-group > li,
@@ -7282,12 +7326,14 @@ tbody.collapse.in {
 .input-group-btn:first-child > .btn:not(:first-child),
 .input-group-btn:first-child > .button-base:not(:first-child),
 .input-group-btn:first-child > .button:not(:first-child),
+.entry .input-group-btn:first-child > .edit-post-link:not(:first-child),
 .entry .input-group-btn:first-child > .more-link:not(:first-child),
 .input-group-btn:first-child > .button-small:not(:first-child),
 .header .menu ul .input-group-btn:first-child > li:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
 .input-group-btn:first-child > .btn-group:not(:first-child) > .button-base,
 .input-group-btn:first-child > .btn-group:not(:first-child) > .button,
+.entry .input-group-btn:first-child > .btn-group:not(:first-child) > .edit-post-link,
 .entry .input-group-btn:first-child > .btn-group:not(:first-child) > .more-link,
 .input-group-btn:first-child > .btn-group:not(:first-child) > .button-small,
 .header .menu ul .input-group-btn:first-child > .btn-group:not(:first-child) > li {
@@ -7304,20 +7350,20 @@ tbody.collapse.in {
   font-size: 0;
   white-space: nowrap;
 }
-.input-group-btn > .btn, .input-group-btn > .button-base, .input-group-btn > .button, .entry .input-group-btn > .more-link, .input-group-btn > .button-small, .header .menu ul .input-group-btn > li {
+.input-group-btn > .btn, .input-group-btn > .button-base, .input-group-btn > .button, .entry .input-group-btn > .edit-post-link, .entry .input-group-btn > .more-link, .input-group-btn > .button-small, .header .menu ul .input-group-btn > li {
   position: relative;
 }
-.input-group-btn > .btn + .btn, .input-group-btn > .button-base + .btn, .input-group-btn > .button + .btn, .entry .input-group-btn > .more-link + .btn, .input-group-btn > .button-small + .btn, .header .menu ul .input-group-btn > li + .btn, .input-group-btn > .btn + .button-base, .input-group-btn > .button-base + .button-base, .input-group-btn > .button + .button-base, .entry .input-group-btn > .more-link + .button-base, .input-group-btn > .button-small + .button-base, .header .menu ul .input-group-btn > li + .button-base, .input-group-btn > .btn + .button, .input-group-btn > .button-base + .button, .input-group-btn > .button + .button, .entry .input-group-btn > .more-link + .button, .input-group-btn > .button-small + .button, .header .menu ul .input-group-btn > li + .button, .entry .input-group-btn > .btn + .more-link, .entry .input-group-btn > .button-base + .more-link, .entry .input-group-btn > .button + .more-link, .entry .input-group-btn > .more-link + .more-link, .entry .input-group-btn > .button-small + .more-link, .header .menu ul .entry .input-group-btn > li + .more-link, .entry .header .menu ul .input-group-btn > li + .more-link, .input-group-btn > .btn + .button-small, .input-group-btn > .button-base + .button-small, .input-group-btn > .button + .button-small, .entry .input-group-btn > .more-link + .button-small, .input-group-btn > .button-small + .button-small, .header .menu ul .input-group-btn > li + .button-small, .header .menu ul .input-group-btn > .btn + li, .header .menu ul .input-group-btn > .button-base + li, .header .menu ul .input-group-btn > .button + li, .entry .header .menu ul .input-group-btn > .more-link + li, .header .menu ul .entry .input-group-btn > .more-link + li, .header .menu ul .input-group-btn > .button-small + li, .header .menu ul .input-group-btn > li + li {
+.input-group-btn > .btn + .btn, .input-group-btn > .button-base + .btn, .input-group-btn > .button + .btn, .entry .input-group-btn > .edit-post-link + .btn, .entry .input-group-btn > .more-link + .btn, .input-group-btn > .button-small + .btn, .header .menu ul .input-group-btn > li + .btn, .input-group-btn > .btn + .button-base, .input-group-btn > .button-base + .button-base, .input-group-btn > .button + .button-base, .entry .input-group-btn > .edit-post-link + .button-base, .entry .input-group-btn > .more-link + .button-base, .input-group-btn > .button-small + .button-base, .header .menu ul .input-group-btn > li + .button-base, .input-group-btn > .btn + .button, .input-group-btn > .button-base + .button, .input-group-btn > .button + .button, .entry .input-group-btn > .edit-post-link + .button, .entry .input-group-btn > .more-link + .button, .input-group-btn > .button-small + .button, .header .menu ul .input-group-btn > li + .button, .entry .input-group-btn > .btn + .edit-post-link, .entry .input-group-btn > .button-base + .edit-post-link, .entry .input-group-btn > .button + .edit-post-link, .entry .input-group-btn > .edit-post-link + .edit-post-link, .entry .input-group-btn > .more-link + .edit-post-link, .entry .input-group-btn > .button-small + .edit-post-link, .header .menu ul .entry .input-group-btn > li + .edit-post-link, .entry .header .menu ul .input-group-btn > li + .edit-post-link, .entry .input-group-btn > .btn + .more-link, .entry .input-group-btn > .button-base + .more-link, .entry .input-group-btn > .button + .more-link, .entry .input-group-btn > .edit-post-link + .more-link, .entry .input-group-btn > .more-link + .more-link, .entry .input-group-btn > .button-small + .more-link, .header .menu ul .entry .input-group-btn > li + .more-link, .entry .header .menu ul .input-group-btn > li + .more-link, .input-group-btn > .btn + .button-small, .input-group-btn > .button-base + .button-small, .input-group-btn > .button + .button-small, .entry .input-group-btn > .edit-post-link + .button-small, .entry .input-group-btn > .more-link + .button-small, .input-group-btn > .button-small + .button-small, .header .menu ul .input-group-btn > li + .button-small, .header .menu ul .input-group-btn > .btn + li, .header .menu ul .input-group-btn > .button-base + li, .header .menu ul .input-group-btn > .button + li, .entry .header .menu ul .input-group-btn > .edit-post-link + li, .header .menu ul .entry .input-group-btn > .edit-post-link + li, .entry .header .menu ul .input-group-btn > .more-link + li, .header .menu ul .entry .input-group-btn > .more-link + li, .header .menu ul .input-group-btn > .button-small + li, .header .menu ul .input-group-btn > li + li {
   margin-left: -1px;
 }
-.input-group-btn > .btn:hover, .input-group-btn > .button-base:hover, .input-group-btn > .button:hover, .entry .input-group-btn > .more-link:hover, .input-group-btn > .button-small:hover, .header .menu ul .input-group-btn > li:hover, .input-group-btn > .btn:focus, .input-group-btn > .button-base:focus, .input-group-btn > .button:focus, .entry .input-group-btn > .more-link:focus, .input-group-btn > .button-small:focus, .header .menu ul .input-group-btn > li:focus, .input-group-btn > .btn:active, .input-group-btn > .button-base:active, .input-group-btn > .button:active, .entry .input-group-btn > .more-link:active, .input-group-btn > .button-small:active, .header .menu ul .input-group-btn > li:active {
+.input-group-btn > .btn:hover, .input-group-btn > .button-base:hover, .input-group-btn > .button:hover, .entry .input-group-btn > .edit-post-link:hover, .entry .input-group-btn > .more-link:hover, .input-group-btn > .button-small:hover, .header .menu ul .input-group-btn > li:hover, .input-group-btn > .btn:focus, .input-group-btn > .button-base:focus, .input-group-btn > .button:focus, .entry .input-group-btn > .edit-post-link:focus, .entry .input-group-btn > .more-link:focus, .input-group-btn > .button-small:focus, .header .menu ul .input-group-btn > li:focus, .input-group-btn > .btn:active, .input-group-btn > .button-base:active, .input-group-btn > .button:active, .entry .input-group-btn > .edit-post-link:active, .entry .input-group-btn > .more-link:active, .input-group-btn > .button-small:active, .header .menu ul .input-group-btn > li:active {
   z-index: 2;
 }
-.input-group-btn:first-child > .btn, .input-group-btn:first-child > .button-base, .input-group-btn:first-child > .button, .entry .input-group-btn:first-child > .more-link, .input-group-btn:first-child > .button-small, .header .menu ul .input-group-btn:first-child > li,
+.input-group-btn:first-child > .btn, .input-group-btn:first-child > .button-base, .input-group-btn:first-child > .button, .entry .input-group-btn:first-child > .edit-post-link, .entry .input-group-btn:first-child > .more-link, .input-group-btn:first-child > .button-small, .header .menu ul .input-group-btn:first-child > li,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
-.input-group-btn:last-child > .btn, .input-group-btn:last-child > .button-base, .input-group-btn:last-child > .button, .entry .input-group-btn:last-child > .more-link, .input-group-btn:last-child > .button-small, .header .menu ul .input-group-btn:last-child > li,
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .button-base, .input-group-btn:last-child > .button, .entry .input-group-btn:last-child > .edit-post-link, .entry .input-group-btn:last-child > .more-link, .input-group-btn:last-child > .button-small, .header .menu ul .input-group-btn:last-child > li,
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
@@ -7814,11 +7860,11 @@ tbody.collapse.in {
   margin-top: 3px;
   margin-bottom: 3px;
 }
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > .navbar-btn.button-base, .btn-group-sm > .navbar-btn.button, .entry .btn-group-sm > .navbar-btn.more-link, .navbar-btn.button-small, .header .menu ul li.navbar-btn {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > .navbar-btn.button-base, .btn-group-sm > .navbar-btn.button, .entry .btn-group-sm > .navbar-btn.edit-post-link, .entry .btn-group-sm > .navbar-btn.more-link, .navbar-btn.button-small, .header .menu ul li.navbar-btn {
   margin-top: 7px;
   margin-bottom: 7px;
 }
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > .navbar-btn.button-base, .btn-group-xs > .navbar-btn.button, .entry .btn-group-xs > .navbar-btn.more-link, .btn-group-xs > .navbar-btn.button-small, .header .menu ul .btn-group-xs > li.navbar-btn {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > .navbar-btn.button-base, .btn-group-xs > .navbar-btn.button, .entry .btn-group-xs > .navbar-btn.edit-post-link, .entry .btn-group-xs > .navbar-btn.more-link, .btn-group-xs > .navbar-btn.button-small, .header .menu ul .btn-group-xs > li.navbar-btn {
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -8185,7 +8231,7 @@ tbody.collapse.in {
 .label:empty {
   display: none;
 }
-.btn .label, .button-base .label, .button .label, .entry .more-link .label, .button-small .label, .header .menu ul li .label {
+.btn .label, .button-base .label, .button .label, .entry .edit-post-link .label, .entry .more-link .label, .button-small .label, .header .menu ul li .label {
   position: relative;
   top: -1px;
 }
@@ -8255,11 +8301,11 @@ a.label:hover, a.label:focus {
 .badge:empty {
   display: none;
 }
-.btn .badge, .button-base .badge, .button .badge, .entry .more-link .badge, .button-small .badge, .header .menu ul li .badge {
+.btn .badge, .button-base .badge, .button .badge, .entry .edit-post-link .badge, .entry .more-link .badge, .button-small .badge, .header .menu ul li .badge {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .button-base .badge, .btn-group-xs > .button .badge, .entry .btn-group-xs > .more-link .badge, .btn-group-xs > .button-small .badge, .header .menu ul .btn-group-xs > li .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .button-base .badge, .btn-group-xs > .button .badge, .entry .btn-group-xs > .edit-post-link .badge, .entry .btn-group-xs > .more-link .badge, .btn-group-xs > .button-small .badge, .header .menu ul .btn-group-xs > li .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -9285,11 +9331,11 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
-.modal-footer .btn + .btn, .modal-footer .button-base + .btn, .modal-footer .button + .btn, .modal-footer .entry .more-link + .btn, .entry .modal-footer .more-link + .btn, .modal-footer .button-small + .btn, .modal-footer .header .menu ul li + .btn, .header .menu ul .modal-footer li + .btn, .modal-footer .btn + .button-base, .modal-footer .button-base + .button-base, .modal-footer .button + .button-base, .modal-footer .entry .more-link + .button-base, .entry .modal-footer .more-link + .button-base, .modal-footer .button-small + .button-base, .modal-footer .header .menu ul li + .button-base, .header .menu ul .modal-footer li + .button-base, .modal-footer .btn + .button, .modal-footer .button-base + .button, .modal-footer .button + .button, .modal-footer .entry .more-link + .button, .entry .modal-footer .more-link + .button, .modal-footer .button-small + .button, .modal-footer .header .menu ul li + .button, .header .menu ul .modal-footer li + .button, .modal-footer .entry .btn + .more-link, .entry .modal-footer .btn + .more-link, .modal-footer .entry .button-base + .more-link, .entry .modal-footer .button-base + .more-link, .modal-footer .entry .button + .more-link, .entry .modal-footer .button + .more-link, .modal-footer .entry .more-link + .more-link, .entry .modal-footer .more-link + .more-link, .modal-footer .entry .button-small + .more-link, .entry .modal-footer .button-small + .more-link, .modal-footer .header .menu ul .entry li + .more-link, .entry .modal-footer .header .menu ul li + .more-link, .header .menu ul .modal-footer .entry li + .more-link, .entry .header .menu ul .modal-footer li + .more-link, .modal-footer .btn + .button-small, .modal-footer .button-base + .button-small, .modal-footer .button + .button-small, .modal-footer .entry .more-link + .button-small, .entry .modal-footer .more-link + .button-small, .modal-footer .button-small + .button-small, .modal-footer .header .menu ul li + .button-small, .header .menu ul .modal-footer li + .button-small, .modal-footer .header .menu ul .btn + li, .header .menu ul .modal-footer .btn + li, .modal-footer .header .menu ul .button-base + li, .header .menu ul .modal-footer .button-base + li, .modal-footer .header .menu ul .button + li, .header .menu ul .modal-footer .button + li, .modal-footer .entry .header .menu ul .more-link + li, .header .menu ul .modal-footer .entry .more-link + li, .entry .modal-footer .header .menu ul .more-link + li, .header .menu ul .entry .modal-footer .more-link + li, .modal-footer .header .menu ul .button-small + li, .header .menu ul .modal-footer .button-small + li, .modal-footer .header .menu ul li + li, .header .menu ul .modal-footer li + li {
+.modal-footer .btn + .btn, .modal-footer .button-base + .btn, .modal-footer .button + .btn, .modal-footer .entry .edit-post-link + .btn, .entry .modal-footer .edit-post-link + .btn, .modal-footer .entry .more-link + .btn, .entry .modal-footer .more-link + .btn, .modal-footer .button-small + .btn, .modal-footer .header .menu ul li + .btn, .header .menu ul .modal-footer li + .btn, .modal-footer .btn + .button-base, .modal-footer .button-base + .button-base, .modal-footer .button + .button-base, .modal-footer .entry .edit-post-link + .button-base, .entry .modal-footer .edit-post-link + .button-base, .modal-footer .entry .more-link + .button-base, .entry .modal-footer .more-link + .button-base, .modal-footer .button-small + .button-base, .modal-footer .header .menu ul li + .button-base, .header .menu ul .modal-footer li + .button-base, .modal-footer .btn + .button, .modal-footer .button-base + .button, .modal-footer .button + .button, .modal-footer .entry .edit-post-link + .button, .entry .modal-footer .edit-post-link + .button, .modal-footer .entry .more-link + .button, .entry .modal-footer .more-link + .button, .modal-footer .button-small + .button, .modal-footer .header .menu ul li + .button, .header .menu ul .modal-footer li + .button, .modal-footer .entry .btn + .edit-post-link, .entry .modal-footer .btn + .edit-post-link, .modal-footer .entry .button-base + .edit-post-link, .entry .modal-footer .button-base + .edit-post-link, .modal-footer .entry .button + .edit-post-link, .entry .modal-footer .button + .edit-post-link, .modal-footer .entry .edit-post-link + .edit-post-link, .entry .modal-footer .edit-post-link + .edit-post-link, .modal-footer .entry .more-link + .edit-post-link, .entry .modal-footer .more-link + .edit-post-link, .modal-footer .entry .button-small + .edit-post-link, .entry .modal-footer .button-small + .edit-post-link, .modal-footer .header .menu ul .entry li + .edit-post-link, .entry .modal-footer .header .menu ul li + .edit-post-link, .header .menu ul .modal-footer .entry li + .edit-post-link, .entry .header .menu ul .modal-footer li + .edit-post-link, .modal-footer .entry .btn + .more-link, .entry .modal-footer .btn + .more-link, .modal-footer .entry .button-base + .more-link, .entry .modal-footer .button-base + .more-link, .modal-footer .entry .button + .more-link, .entry .modal-footer .button + .more-link, .modal-footer .entry .edit-post-link + .more-link, .entry .modal-footer .edit-post-link + .more-link, .modal-footer .entry .more-link + .more-link, .entry .modal-footer .more-link + .more-link, .modal-footer .entry .button-small + .more-link, .entry .modal-footer .button-small + .more-link, .modal-footer .header .menu ul .entry li + .more-link, .entry .modal-footer .header .menu ul li + .more-link, .header .menu ul .modal-footer .entry li + .more-link, .entry .header .menu ul .modal-footer li + .more-link, .modal-footer .btn + .button-small, .modal-footer .button-base + .button-small, .modal-footer .button + .button-small, .modal-footer .entry .edit-post-link + .button-small, .entry .modal-footer .edit-post-link + .button-small, .modal-footer .entry .more-link + .button-small, .entry .modal-footer .more-link + .button-small, .modal-footer .button-small + .button-small, .modal-footer .header .menu ul li + .button-small, .header .menu ul .modal-footer li + .button-small, .modal-footer .header .menu ul .btn + li, .header .menu ul .modal-footer .btn + li, .modal-footer .header .menu ul .button-base + li, .header .menu ul .modal-footer .button-base + li, .modal-footer .header .menu ul .button + li, .header .menu ul .modal-footer .button + li, .modal-footer .entry .header .menu ul .edit-post-link + li, .header .menu ul .modal-footer .entry .edit-post-link + li, .entry .modal-footer .header .menu ul .edit-post-link + li, .header .menu ul .entry .modal-footer .edit-post-link + li, .modal-footer .entry .header .menu ul .more-link + li, .header .menu ul .modal-footer .entry .more-link + li, .entry .modal-footer .header .menu ul .more-link + li, .header .menu ul .entry .modal-footer .more-link + li, .modal-footer .header .menu ul .button-small + li, .header .menu ul .modal-footer .button-small + li, .modal-footer .header .menu ul li + li, .header .menu ul .modal-footer li + li {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .button-base + .btn, .modal-footer .btn-group .button + .btn, .modal-footer .btn-group .entry .more-link + .btn, .entry .modal-footer .btn-group .more-link + .btn, .modal-footer .btn-group .button-small + .btn, .modal-footer .btn-group .header .menu ul li + .btn, .header .menu ul .modal-footer .btn-group li + .btn, .modal-footer .btn-group .btn + .button-base, .modal-footer .btn-group .button-base + .button-base, .modal-footer .btn-group .button + .button-base, .modal-footer .btn-group .entry .more-link + .button-base, .entry .modal-footer .btn-group .more-link + .button-base, .modal-footer .btn-group .button-small + .button-base, .modal-footer .btn-group .header .menu ul li + .button-base, .header .menu ul .modal-footer .btn-group li + .button-base, .modal-footer .btn-group .btn + .button, .modal-footer .btn-group .button-base + .button, .modal-footer .btn-group .button + .button, .modal-footer .btn-group .entry .more-link + .button, .entry .modal-footer .btn-group .more-link + .button, .modal-footer .btn-group .button-small + .button, .modal-footer .btn-group .header .menu ul li + .button, .header .menu ul .modal-footer .btn-group li + .button, .modal-footer .btn-group .entry .btn + .more-link, .entry .modal-footer .btn-group .btn + .more-link, .modal-footer .btn-group .entry .button-base + .more-link, .entry .modal-footer .btn-group .button-base + .more-link, .modal-footer .btn-group .entry .button + .more-link, .entry .modal-footer .btn-group .button + .more-link, .modal-footer .btn-group .entry .more-link + .more-link, .entry .modal-footer .btn-group .more-link + .more-link, .modal-footer .btn-group .entry .button-small + .more-link, .entry .modal-footer .btn-group .button-small + .more-link, .modal-footer .btn-group .header .menu ul .entry li + .more-link, .entry .modal-footer .btn-group .header .menu ul li + .more-link, .header .menu ul .modal-footer .btn-group .entry li + .more-link, .entry .header .menu ul .modal-footer .btn-group li + .more-link, .modal-footer .btn-group .btn + .button-small, .modal-footer .btn-group .button-base + .button-small, .modal-footer .btn-group .button + .button-small, .modal-footer .btn-group .entry .more-link + .button-small, .entry .modal-footer .btn-group .more-link + .button-small, .modal-footer .btn-group .button-small + .button-small, .modal-footer .btn-group .header .menu ul li + .button-small, .header .menu ul .modal-footer .btn-group li + .button-small, .modal-footer .btn-group .header .menu ul .btn + li, .header .menu ul .modal-footer .btn-group .btn + li, .modal-footer .btn-group .header .menu ul .button-base + li, .header .menu ul .modal-footer .btn-group .button-base + li, .modal-footer .btn-group .header .menu ul .button + li, .header .menu ul .modal-footer .btn-group .button + li, .modal-footer .btn-group .entry .header .menu ul .more-link + li, .header .menu ul .modal-footer .btn-group .entry .more-link + li, .entry .modal-footer .btn-group .header .menu ul .more-link + li, .header .menu ul .entry .modal-footer .btn-group .more-link + li, .modal-footer .btn-group .header .menu ul .button-small + li, .header .menu ul .modal-footer .btn-group .button-small + li, .modal-footer .btn-group .header .menu ul li + li, .header .menu ul .modal-footer .btn-group li + li {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .button-base + .btn, .modal-footer .btn-group .button + .btn, .modal-footer .btn-group .entry .edit-post-link + .btn, .entry .modal-footer .btn-group .edit-post-link + .btn, .modal-footer .btn-group .entry .more-link + .btn, .entry .modal-footer .btn-group .more-link + .btn, .modal-footer .btn-group .button-small + .btn, .modal-footer .btn-group .header .menu ul li + .btn, .header .menu ul .modal-footer .btn-group li + .btn, .modal-footer .btn-group .btn + .button-base, .modal-footer .btn-group .button-base + .button-base, .modal-footer .btn-group .button + .button-base, .modal-footer .btn-group .entry .edit-post-link + .button-base, .entry .modal-footer .btn-group .edit-post-link + .button-base, .modal-footer .btn-group .entry .more-link + .button-base, .entry .modal-footer .btn-group .more-link + .button-base, .modal-footer .btn-group .button-small + .button-base, .modal-footer .btn-group .header .menu ul li + .button-base, .header .menu ul .modal-footer .btn-group li + .button-base, .modal-footer .btn-group .btn + .button, .modal-footer .btn-group .button-base + .button, .modal-footer .btn-group .button + .button, .modal-footer .btn-group .entry .edit-post-link + .button, .entry .modal-footer .btn-group .edit-post-link + .button, .modal-footer .btn-group .entry .more-link + .button, .entry .modal-footer .btn-group .more-link + .button, .modal-footer .btn-group .button-small + .button, .modal-footer .btn-group .header .menu ul li + .button, .header .menu ul .modal-footer .btn-group li + .button, .modal-footer .btn-group .entry .btn + .edit-post-link, .entry .modal-footer .btn-group .btn + .edit-post-link, .modal-footer .btn-group .entry .button-base + .edit-post-link, .entry .modal-footer .btn-group .button-base + .edit-post-link, .modal-footer .btn-group .entry .button + .edit-post-link, .entry .modal-footer .btn-group .button + .edit-post-link, .modal-footer .btn-group .entry .edit-post-link + .edit-post-link, .entry .modal-footer .btn-group .edit-post-link + .edit-post-link, .modal-footer .btn-group .entry .more-link + .edit-post-link, .entry .modal-footer .btn-group .more-link + .edit-post-link, .modal-footer .btn-group .entry .button-small + .edit-post-link, .entry .modal-footer .btn-group .button-small + .edit-post-link, .modal-footer .btn-group .header .menu ul .entry li + .edit-post-link, .entry .modal-footer .btn-group .header .menu ul li + .edit-post-link, .header .menu ul .modal-footer .btn-group .entry li + .edit-post-link, .entry .header .menu ul .modal-footer .btn-group li + .edit-post-link, .modal-footer .btn-group .entry .btn + .more-link, .entry .modal-footer .btn-group .btn + .more-link, .modal-footer .btn-group .entry .button-base + .more-link, .entry .modal-footer .btn-group .button-base + .more-link, .modal-footer .btn-group .entry .button + .more-link, .entry .modal-footer .btn-group .button + .more-link, .modal-footer .btn-group .entry .edit-post-link + .more-link, .entry .modal-footer .btn-group .edit-post-link + .more-link, .modal-footer .btn-group .entry .more-link + .more-link, .entry .modal-footer .btn-group .more-link + .more-link, .modal-footer .btn-group .entry .button-small + .more-link, .entry .modal-footer .btn-group .button-small + .more-link, .modal-footer .btn-group .header .menu ul .entry li + .more-link, .entry .modal-footer .btn-group .header .menu ul li + .more-link, .header .menu ul .modal-footer .btn-group .entry li + .more-link, .entry .header .menu ul .modal-footer .btn-group li + .more-link, .modal-footer .btn-group .btn + .button-small, .modal-footer .btn-group .button-base + .button-small, .modal-footer .btn-group .button + .button-small, .modal-footer .btn-group .entry .edit-post-link + .button-small, .entry .modal-footer .btn-group .edit-post-link + .button-small, .modal-footer .btn-group .entry .more-link + .button-small, .entry .modal-footer .btn-group .more-link + .button-small, .modal-footer .btn-group .button-small + .button-small, .modal-footer .btn-group .header .menu ul li + .button-small, .header .menu ul .modal-footer .btn-group li + .button-small, .modal-footer .btn-group .header .menu ul .btn + li, .header .menu ul .modal-footer .btn-group .btn + li, .modal-footer .btn-group .header .menu ul .button-base + li, .header .menu ul .modal-footer .btn-group .button-base + li, .modal-footer .btn-group .header .menu ul .button + li, .header .menu ul .modal-footer .btn-group .button + li, .modal-footer .btn-group .entry .header .menu ul .edit-post-link + li, .header .menu ul .modal-footer .btn-group .entry .edit-post-link + li, .entry .modal-footer .btn-group .header .menu ul .edit-post-link + li, .header .menu ul .entry .modal-footer .btn-group .edit-post-link + li, .modal-footer .btn-group .entry .header .menu ul .more-link + li, .header .menu ul .modal-footer .btn-group .entry .more-link + li, .entry .modal-footer .btn-group .header .menu ul .more-link + li, .header .menu ul .entry .modal-footer .btn-group .more-link + li, .modal-footer .btn-group .header .menu ul .button-small + li, .header .menu ul .modal-footer .btn-group .button-small + li, .modal-footer .btn-group .header .menu ul li + li, .header .menu ul .modal-footer .btn-group li + li {
   margin-left: -1px;
 }
 .modal-footer .btn-block + .btn-block {
@@ -9754,7 +9800,7 @@ button.close {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-.carousel-caption .btn, .carousel-caption .button-base, .carousel-caption .button, .carousel-caption .entry .more-link, .entry .carousel-caption .more-link, .carousel-caption .button-small, .carousel-caption .header .menu ul li, .header .menu ul .carousel-caption li {
+.carousel-caption .btn, .carousel-caption .button-base, .carousel-caption .button, .carousel-caption .entry .edit-post-link, .entry .carousel-caption .edit-post-link, .carousel-caption .entry .more-link, .entry .carousel-caption .more-link, .carousel-caption .button-small, .carousel-caption .header .menu ul li, .header .menu ul .carousel-caption li {
   text-shadow: none;
 }
 
@@ -10103,16 +10149,29 @@ a:hover, a:focus {
   line-height: 1.2;
 }
 
-.button-base, .button, .entry .more-link, .button-small, .header .menu ul li {
+.button-base, .button, .entry .edit-post-link, .entry .more-link, .button-small, .header .menu ul li {
   border: 2px solid transparent;
   border-radius: 5px;
   color: #ff3472;
   font-family: "Quicksand", serif;
   font-weight: 400;
-  transition: 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, color 0.15s ease-in-out;
+}
+.button-base:hover, .button:hover, .entry .edit-post-link:hover, .entry .more-link:hover, .button-small:hover, .header .menu ul li:hover {
+  border-color: #fff;
+  color: #ff3472;
+}
+.button-base:focus, .button:focus, .entry .edit-post-link:focus, .entry .more-link:focus, .button-small:focus, .header .menu ul li:focus {
+  color: #ff3472;
+  outline: none;
+}
+.button-base:active, .button:active, .entry .edit-post-link:active, .entry .more-link:active, .button-small:active, .header .menu ul li:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #cacaca;
 }
 
-.button, .entry .more-link {
+.button, .entry .edit-post-link, .entry .more-link {
   border-color: #ff3472;
   padding-left: 30px;
   padding-right: 30px;
@@ -12633,23 +12692,16 @@ a:hover, a:focus {
 }
 .entry .edit-post-link {
   background-color: #fff;
-  border: 2px solid #ededed;
-  border-radius: 5px;
-  color: #aeaeae;
-  display: table;
-  font-size: 23px;
   opacity: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   position: absolute;
   top: 0;
   right: 0;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  transition: 0.2s ease-in-out;
+  transition: none;
 }
-.entry .edit-post-link i {
-  display: table-cell;
-  vertical-align: middle;
+.entry .edit-post-link:hover {
+  border-color: #ff3472;
 }
 .entry .entry-info {
   position: relative;
