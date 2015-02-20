@@ -96,7 +96,7 @@ function custom_edit_post_link($output)
   get_currentuserinfo();
 
   if ($post->post_author == $current_user->ID) {
-    $output = '<a href="' . get_edit_post_link() . '" class="edit-post-link" title="' . __('Edit Post', 'tatooine') . '"><i class="fa fa-pencil"></i></a>';
+    $output = '<a href="' . get_edit_post_link() . '">' . __('Edit Post', 'tatooine') . '</a>';
     return $output;
   }
 
