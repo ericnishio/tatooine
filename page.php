@@ -28,10 +28,12 @@
       </section>
     </div>
   </section>
-  <section class="section-secondary section-container">
-    <div class="section-inner">
-      <?php if ( ! post_password_required() ) comments_template( '', true ); ?>
-    </div>
-  </section>
+  <?php if ( comments_open() ): ?>
+    <section class="section-secondary section-container">
+      <div class="section-inner">
+        <?php if ( ! post_password_required() ) comments_template( '', true ); ?>
+      </div>
+    </section>
+  <?php endif; ?>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>
