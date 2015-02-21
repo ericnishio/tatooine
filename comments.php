@@ -1,5 +1,5 @@
 <?php if ( 'comments.php' == basename( $_SERVER['SCRIPT_FILENAME'] ) ) return; ?>
-<section id="comments">
+<section id="comments" class="comments">
   <?php if ( have_comments() ): ?>
     <?php global $comments_by_type; ?>
     <?php $comments_by_type = &separate_comments( $comments ); ?>
@@ -17,7 +17,7 @@
               <?php endif; ?>
               <ul>
               <?php wp_list_comments( array(
-                'avatar_size' => 80,
+                'callback' => 'comments_callback',
               ) ); ?>
               </ul>
               <?php if ( get_comment_pages_count() > 1 ) : ?>
@@ -41,7 +41,7 @@
       </section>
     <?php endif; ?>
   <?php endif; ?>
-  <section class="section section-secondary section-container">
+  <section class="section section-secondary section-container section-more-padding">
     <div class="section-inner">
       <?php if ( comments_open() ) comment_form( array(
         'class_submit' => 'button',

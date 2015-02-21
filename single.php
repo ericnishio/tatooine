@@ -3,7 +3,7 @@
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <?php get_template_part( 'entry' ); ?>
     <?php if ( ! post_password_required() ): ?>
-      <section class="section section-container section-secondary">
+      <section class="section section-container section-secondary section-more-padding">
         <div class="section-inner">
           <div class="below-post">
             <div class="below-post-left">

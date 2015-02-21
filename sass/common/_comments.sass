@@ -27,11 +27,57 @@
       width: 0
       height: 0
 
+    img
+      position: absolute
+      top: 0
+      left: -40px
+
+  .comment-content
+    margin-top: 20px
+    margin-bottom: 20px
+
+  .comment-meta
+    +make-row()
+
     .comment-author
-      img
-        position: absolute
-        top: 0
-        left: -40px
+      +make-sm-column(6)
+      font-family: $font-family-slim
+      font-weight: 400
+      font-size: 25px
+      line-height: 45px
+
+    .comment-time
+      +make-sm-column(6)
+      color: $gray-light
+      font-family: Quicksand
+      font-size: 18px
+      font-weight: 300
+      line-height: 45px
+      text-align: right
+
+  .comment-footer
+    +make-row()
+
+    .comment-status
+      +make-sm-column(6)
+      line-height: 40px
+
+      .comment-awaiting-moderation
+        background-color: #FFE7EF
+        padding: 5px 10px
+        border-bottom: 2px solid rgb(255, 182, 182)
+        font-size: 14px
+
+    .comment-reply
+      +make-sm-column(6)
+      line-height: 40px
+      text-align: right
+
+  .comment-reply-title
+    margin-top: 0
+
+  .comment + .comment-respond
+    margin-left: 65px
 
   .bypostauthor
     > .comment-body

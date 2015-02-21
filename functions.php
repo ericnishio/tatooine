@@ -137,7 +137,7 @@ function custom_edit_post_link($output)
 
   get_currentuserinfo();
 
-  if ($post->post_author == $current_user->ID) {
+  if ( $post->post_author == $current_user->ID ) {
     $output = '<a href="' . get_edit_post_link() . '">' . __('Edit Post', 'tatooine') . '</a>';
     return $output;
   }
@@ -145,24 +145,63 @@ function custom_edit_post_link($output)
   return false;
 }
 
+function comments_callback( $comment, $args, $depth )
+{
+  $GLOBALS['comment'] = $comment;
+
+  ?>
+  <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+    <article id="comment-<?php comment_ID(); ?>" class="comment-body">
+      <?php echo get_avatar( $comment, 80 ); ?>
+      <header class="comment-meta">
+        <div class="comment-author vcard">
+          <span class="author-name"><?php comment_author(); ?></span>
+        </div>
+        <div class="comment-time">
+          <time <?php comment_time( 'c' ); ?>>
+            <span class="date"><?php comment_date(); ?></span>
+            <span class="time"><?php comment_time(); ?></span>
+          </time>
+        </div>
+      </header>
+      <div class="comment-content"><?php comment_text(); ?></div>
+      <footer class="comment-footer">
+        <div class="comment-status">
+          <?php if ( $comment->comment_approved == '0' ): ?>
+            <span class="comment-awaiting-moderation"><?php echo __('Your comment is awaiting moderation.', 'tatooine'); ?></span>
+          <?php endif ?>
+        </div>
+        <div class="comment-reply">
+          <?php comment_reply_link( array_merge( $args, array(
+            'reply_text' => __( '<i class="fa fa-comments-o"></i> Reply', 'tatooine' ),
+            'depth' => $depth,
+            'max_depth' => $args['max_depth'],
+          ) ) ); ?>
+        </div>
+      </footer>
+    </article>
+  </li>
+  <?php
+}
+
 /**
  * Beautifies a string by adding an <em> toward the end of it.
  * @param string string
  * @return string
  */
-function beautify_string($string)
+function beautify_string( $string )
 {
-  $length = strlen($string);
+  $length = strlen( $string );
 
-  if ($length > 3) {
+  if ( $length > 3 ) {
     $pos = $length - 3;
   } else {
     $pos = $length - 1;
   }
 
-  $replacement = substr($string, $pos, 1);
+  $replacement = substr( $string, $pos, 1 );
 
-  return substr_replace($string, "<em>$replacement</em>", $pos, 1);
+  return substr_replace( $string, "<em>$replacement</em>", $pos, 1 );
 }
 
 /**
@@ -170,7 +209,7 @@ function beautify_string($string)
  * @param string sidebar_id
  * @return string
  */
-function render_sidebar($sidebar_id)
+function render_sidebar( $sidebar_id )
 {
   if ( is_active_sidebar( $sidebar_id ) ) {
     return dynamic_sidebar( $sidebar_id );
