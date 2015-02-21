@@ -15,11 +15,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-container">
-        <div class="section-inner">
-          <?php comments_template( '', true ); ?>
-        </div>
-      </section>
+      <?php comments_template( '', true ); ?>
     <?php endif; ?>
   <?php endwhile; endif; ?>
 </section>
