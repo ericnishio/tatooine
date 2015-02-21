@@ -31,6 +31,9 @@
       color: $gray-light
       padding-right: 5px
 
+      +respond-to(mobile)
+        font-size: 15px
+
     .meta-text
       font-family: $font-family-slim
       font-weight: 400
@@ -38,9 +41,15 @@
       letter-spacing: 1px
       text-transform: uppercase
 
+      +respond-to(mobile)
+        font-size: 10px
+
   .more-link
     @extend .button
     margin-top: 30px
+
+    +respond-to(mobile)
+      width: 100%
 
   .meta-info
     margin-bottom: 30px

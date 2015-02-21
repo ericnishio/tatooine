@@ -18,6 +18,12 @@
   .footer-column
     +make-sm-column(4)
 
+    +respond-to(mobile)
+      margin-bottom: 40px
+
+      &:last-child
+        margin-bottom: 0
+
 .copyright-columns
   +make-row()
 
@@ -33,8 +39,17 @@
   .copyright-column
     +make-sm-column(6)
 
+    +respond-to(mobile)
+      margin-bottom: 10px
+
+      &:last-child
+        margin-bottom: 0
+
     &:last-child
       text-align: right
+
+      +respond-to(mobile)
+        text-align: initial
 
   .icon
     margin-right: 15px
@@ -49,3 +64,7 @@
   letter-spacing: 3px
   line-height: 38px
   text-transform: uppercase
+
+  +respond-to(mobile)
+    font-size: 11px
+    line-height: 22px
