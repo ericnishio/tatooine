@@ -15,7 +15,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-secondary section-container">
+      <section class="section section-container">
         <div class="section-inner">
           <?php comments_template( '', true ); ?>
         </div>
