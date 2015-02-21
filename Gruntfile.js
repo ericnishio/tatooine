@@ -33,23 +33,40 @@ module.exports = function(grunt) {
           }
         }
       },
+      update_json: {
+        options: {
+          indent: '\t'
+        },
+        bower: {
+          src: 'package.json',
+          dest: 'bower.json',
+          fields: {
+            name: 'name',
+            version: 'version',
+            authors: 'authors',
+            description: 'description',
+            repository: 'repository',
+            license: 'license'
+          }
+        }
+      },
       watch: {
         sass: {
           files: ['<%= paths.sass %>/**/*.{scss,sass}'],
           tasks: ['sass']
         },
-        'style.css': {
+        version: {
           files: [
             '<%= paths.root %>/package.json',
             '<%= paths.sass %>/main.css'
           ],
-          tasks: ['template']
+          tasks: ['template', 'update_json']
         }
       }
     });
 
     // Builds the theme
-    grunt.registerTask('build', ['sass', 'template']);
+    grunt.registerTask('build', ['sass', 'template', 'update_json']);
 
     // Default task
     grunt.registerTask('default', ['build', 'watch']);

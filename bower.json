@@ -1,22 +1,26 @@
 {
-  "name": "tatooine",
-  "version": "0.0.1",
-  "homepage": "https://github.com/ericnishio/tatooine",
-  "authors": [
-    "Eric Nishio <eric@self-learner.com>"
-  ],
-  "description": "An open-source WordPress theme.",
-  "license": "GNU",
-  "private": false,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap-sass-official": "~3.3.3",
-    "font-awesome": "~4.3.0"
-  }
+	"name": "tatooine",
+	"version": "0.0.1",
+	"homepage": "https://github.com/ericnishio/tatooine",
+	"authors": [
+		"Eric Nishio <eric@self-learner.com>"
+	],
+	"description": "An open-source WordPress theme.",
+	"license": "GNU",
+	"private": false,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"bootstrap-sass-official": "~3.3.3",
+		"font-awesome": "~4.3.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ericnishio/tatooine.git"
+	}
 }
