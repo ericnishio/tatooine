@@ -1,1 +1,41 @@
-.comment-body
+.comments
+  ul
+    padding-left: 40px
+
+    li
+      &:before
+        content: none
+
+    ul
+      padding-left: 105px
+
+  .comment-body
+    border: 1px solid $gray-lightest
+    border-left: 3px solid $gray-light
+    margin-left: 65px
+    margin-bottom: 30px
+    padding: 20px 30px
+
+    &:before
+      border-top: 10px solid transparent
+      border-bottom: 10px solid transparent
+      border-right: 15px solid $gray-light
+      content: ""
+      position: absolute
+      top: 15px
+      left: 50px
+      width: 0
+      height: 0
+
+    .comment-author
+      img
+        position: absolute
+        top: 0
+        left: -40px
+
+  .bypostauthor
+    > .comment-body
+      border-left-color: $pink
+
+      &:before
+        border-right-color: $pink
