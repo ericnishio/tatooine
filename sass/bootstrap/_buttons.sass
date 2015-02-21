@@ -19,6 +19,9 @@
     +box-shadow(none)
     color: $gray-lightest
 
+  &:active:focus
+    outline: none
+
 .button
   @extend .button-base
   @extend .btn-lg
@@ -27,8 +30,12 @@
   padding-right: 30px
 
 .button-inverted
+  background-color: $grapes
   border-color: $grapes-washed
   color: $grapes-light
+
+  &.button-small:focus
+    color: $grapes-light
 
   &:hover
     border-color: $grapes-medium

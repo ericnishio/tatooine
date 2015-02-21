@@ -22,7 +22,21 @@
             </h1>
           <?php endif; ?>
           <p class="lead"><?php bloginfo( 'description' ); ?></p>
-          <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+          <div class="hidden-xs">
+            <?php wp_nav_menu( array(
+              'theme_location' => 'main-menu',
+            ) ); ?>
+          </div>
+          <div class="visible-xs-block">
+            <div id="collapse-main-menu" class="collapse">
+              <?php wp_nav_menu( array(
+                'theme_location' => 'main-menu',
+              ) ); ?>
+            </div>
+            <button class="menu-toggle-button" type="button" data-toggle="collapse" data-target="#collapse-main-menu" aria-expanded="false" aria-controls="collapse-main-menu">
+              <i class="fa fa-navicon"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
