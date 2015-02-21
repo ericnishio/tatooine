@@ -108,6 +108,13 @@ function remove_default_stylesheet()
   wp_enqueue_style( 'new-style' );
 }
 
+add_action( 'wp_enqueue_scripts', 'add_vendor_scripts' );
+function add_vendor_scripts()
+{
+  wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js' );
+  wp_enqueue_script( 'bootstrap-js' );
+}
+
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 function modify_read_more_link()
 {
