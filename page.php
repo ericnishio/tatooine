@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <section class="section section-narrow">
+  <section class="section section-narrow section-more-padding">
     <div class="section-inner">
       <section id="content" class="entry" role="main">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <h1 class="heading"><?php the_title(); ?></h1>
           <div class="meta-info">
             <?php if ( is_post_author() ): ?>
               <div class="meta-item">
