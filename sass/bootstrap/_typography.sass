@@ -6,6 +6,18 @@ a
     text-decoration: none
     outline: none
 
+ul
+  list-style: none
+
+  li
+    position: relative
+
+    &:before
+      +fa-icon(angle-right)
+      position: absolute
+      left: -26px
+      top: 7px
+
 .heading-1
 
 .heading-2

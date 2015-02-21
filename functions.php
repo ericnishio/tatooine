@@ -76,6 +76,24 @@ function tatooine_widgets_init()
     'before_title'  => '<h2 class="footer-heading">',
     'after_title'   => '</h2>',
   ) );
+
+  register_sidebar( array(
+    'name'          => 'Below Post Left',
+    'id'            => 'below_post_left',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2 class="below-post-heading">',
+    'after_title'   => '</h2>',
+  ) );
+
+  register_sidebar( array(
+    'name'          => 'Below Post Right',
+    'id'            => 'below_post_right',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2 class="below-post-heading">',
+    'after_title'   => '</h2>',
+  ) );
 }
 
 function tatooine_custom_pings( $comment )
@@ -145,4 +163,18 @@ function beautify_string($string)
   $replacement = substr($string, $pos, 1);
 
   return substr_replace($string, "<em>$replacement</em>", $pos, 1);
+}
+
+/**
+ * Renders a sidebar.
+ * @param string sidebar_id
+ * @return string
+ */
+function render_sidebar($sidebar_id)
+{
+  if ( is_active_sidebar( $sidebar_id ) ) {
+    return dynamic_sidebar( $sidebar_id );
+  } else {
+    return '';
+  }
 }

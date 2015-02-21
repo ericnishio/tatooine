@@ -24,12 +24,14 @@ Tatooine is distributed under the terms of the GNU GPL
 // Bootstrap
 @import "bootstrap/variables";
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
-@import "bootstrap/typography.sass";
-@import "bootstrap/buttons.sass";
 
 // Font-Awesome
 @import "../bower_components/font-awesome/scss/font-awesome";
 @import "mixins/fa-icon";
+
+// Bootstrap overrides
+@import "bootstrap/typography.sass";
+@import "bootstrap/buttons.sass";
 
 // Common
 @import "common/vertical-align";
