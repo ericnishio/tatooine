@@ -12,12 +12,12 @@ module.exports = function(grunt) {
       sass: {
         dist: {
           options: {
-            style: 'expanded',
+            style: 'compressed',
             compass: true,
             sourcemap: 'none'
           },
           files: {
-            '<%= paths.css %>/main.css': '<%= paths.sass %>/main.sass'
+            '<%= paths.sass %>/main.css': '<%= paths.sass %>/main.scss'
           }
         }
       },
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
             }
           },
           files: {
-            '<%= paths.root %>/style.css': ['<%= paths.root %>/style.src.css']
+            '<%= paths.root %>/style.css': ['<%= paths.sass %>/main.css']
           }
         }
       },
@@ -41,8 +41,7 @@ module.exports = function(grunt) {
         'style.css': {
           files: [
             '<%= paths.root %>/package.json',
-            '<%= paths.root %>/style.src.css',
-            '<%= paths.root %>/style.css'
+            '<%= paths.sass %>/main.css'
           ],
           tasks: ['template']
         }

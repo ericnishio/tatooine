@@ -98,16 +98,6 @@ function tatooine_comments_number( $count )
   }
 }
 
-add_action( 'wp_enqueue_scripts', 'remove_default_stylesheet', 20 );
-function remove_default_stylesheet()
-{
-  wp_dequeue_style( 'style' );
-  wp_deregister_style( 'style' );
-
-  wp_register_style( 'new-style', get_stylesheet_directory_uri() . '/css/main.css', false, '1.0.0' );
-  wp_enqueue_style( 'new-style' );
-}
-
 add_action( 'wp_enqueue_scripts', 'add_vendor_scripts' );
 function add_vendor_scripts()
 {
