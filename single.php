@@ -22,8 +22,5 @@
       </section>
     <?php endif; ?>
   <?php endwhile; endif; ?>
-  <footer class="footer">
-    <?php get_template_part( 'nav', 'below-single' ); ?>
-  </footer>
 </section>
 <?php get_footer(); ?>
