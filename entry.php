@@ -28,14 +28,16 @@
                       </span>
                     </div>
                   </div>
-                  <div class="meta-item">
-                    <div class="vertical-align">
-                      <i class="fa fa-pencil vertical-align-inner"></i>
-                      <span class="meta-text vertical-align-inner">
-                        <?php edit_post_link(); ?>
-                      </span>
+                  <?php if ( is_post_author() ): ?>
+                    <div class="meta-item">
+                      <div class="vertical-align">
+                        <i class="fa fa-pencil vertical-align-inner"></i>
+                        <span class="meta-text vertical-align-inner">
+                          <?php edit_post_link(); ?>
+                        </span>
+                      </div>
                     </div>
-                  </div>
+                  <?php endif; ?>
                 </div>
               </header>
             </div>

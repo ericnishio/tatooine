@@ -132,17 +132,21 @@ function modify_read_more_link()
 add_filter('edit_post_link', 'custom_edit_post_link');
 function custom_edit_post_link($output)
 {
+  return '<a href="' . get_edit_post_link() . '">' . __('Edit Post', 'tatooine') . '</a>';
+}
+
+/**
+ * Checks if the current user is the author of the post.
+ * @return boolean
+ */
+function is_post_author()
+{
   global $post;
   global $current_user;
 
   get_currentuserinfo();
 
-  if ( $post->post_author == $current_user->ID ) {
-    $output = '<a href="' . get_edit_post_link() . '">' . __('Edit Post', 'tatooine') . '</a>';
-    return $output;
-  }
-
-  return false;
+  return $post->post_author == $current_user->ID;
 }
 
 function comments_callback( $comment, $args, $depth )
