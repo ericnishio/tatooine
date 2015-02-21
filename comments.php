@@ -49,20 +49,20 @@
         'fields' => array(
           'author' =>
             '<div class="form-group">'
-            . '<label for="author">' . __( 'Name', 'domainreference' ) . '</label>'
+            . '<label for="author">' . __( 'Your name', 'tatooine' ) . '</label>'
             . ( $req ? '<span class="required">*</span>' : '' )
             . '<input id="author" class="form-control" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] )
             . '" size="30"' . $aria_req . '>'
             . '</div>',
           'email' =>
             '<div class="form-group">'
-            . '<label for="email">' . __( 'Your Email', 'tatooine' ) . '</label>'
+            . '<label for="email">' . __( 'Your email', 'tatooine' ) . '</label>'
             . ( $req ? '<span>*</span>' : '' )
             . '<input id="email" class="form-control" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . $aria_req . '">'
             . '</div>',
           'url' =>
             '<div class="form-group">'
-            . '<label for="url">' . __( 'Website', 'domainreference' ) . '</label>'
+            . '<label for="url">' . __( 'Website', 'tatooine' ) . '</label>'
             . '<input id="url" class="form-control" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] )
             . '" size="30">'
             . '</div>',
