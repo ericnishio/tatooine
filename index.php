@@ -9,5 +9,5 @@
       </div>
     </div>
   </section>
-    <?php get_template_part( 'nav', 'below' ); ?>
+  <?php get_template_part( 'nav', 'below' ); ?>
 <?php get_footer(); ?>

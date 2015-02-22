@@ -1,13 +1,13 @@
 <?php get_header(); ?>
-  <section id="content" role="main">
-  <article id="post-0" class="post not-found">
-    <header class="header">
-      <h1 class="entry-title"><?php _e( 'Not Found', 'tatooine' ); ?></h1>
-    </header>
-    <section class="entry-content">
-      <p><?php _e( 'Nothing found for the requested page. Try a search instead?', 'tatooine' ); ?></p>
-      <?php get_search_form(); ?>
-    </section>
-  </article>
-</section>
+  <section id="content" class="section section-narrow section-more-padding" role="main">
+    <div class="section-inner">
+      <article id="post-0" class="post not-found">
+        <h1 class="heading-2"><?php _e( 'Not Found', 'tatooine' ); ?></h1>
+        <section class="entry-content">
+          <p><?php _e( 'Nothing found for the requested page. Try a search instead?', 'tatooine' ); ?></p>
+          <?php get_search_form(); ?>
+        </section>
+      </article>
+    </div>
+  </section>
 <?php get_footer(); ?>
