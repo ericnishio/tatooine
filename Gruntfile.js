@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         dist: {
           options: {
             data: {
-              VERSION: '<%= package.version %>',
+              VERSION: '<%= package.version %>'
             }
           },
           files: {
