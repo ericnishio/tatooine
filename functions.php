@@ -156,7 +156,9 @@ function comments_callback( $comment, $args, $depth )
   ?>
   <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
     <article id="comment-<?php comment_ID(); ?>" class="comment-body">
-      <?php echo get_avatar( $comment, 80 ); ?>
+      <div class="comment-avatar">
+        <?php echo get_avatar( $comment, 80 ); ?>
+      </div>
       <header class="comment-meta">
         <div class="comment-author vcard">
           <span class="author-name"><?php comment_author(); ?></span>
