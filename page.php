@@ -26,6 +26,18 @@
       </article>
     </div>
   </section>
+  <section class="section section-container section-secondary section-more-padding">
+    <div class="section-inner">
+      <div class="below-post">
+        <div class="below-post-left">
+          <?php render_sidebar( 'below_post_left' ); ?>
+        </div>
+        <div class="below-post-right">
+          <?php render_sidebar( 'below_post_right' ); ?>
+        </div>
+      </div>
+    </div>
+  </section>
   <?php if ( comments_open() ): ?>
     <section class="section-secondary section-container">
       <div class="section-inner">
