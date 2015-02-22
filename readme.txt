@@ -2,7 +2,7 @@
 
 Tatooine WordPress Theme
 Demo: http://www.self-learner.com
-Download: http://ericnish.io/tatooine
+Download: https://github.com/ericnishio/tatooine
 
 - - DESCRIPTION - -
 
