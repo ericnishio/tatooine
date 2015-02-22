@@ -64,15 +64,34 @@
 .below-post
   +make-row()
 
+  // Simple Share Buttons Adder (plugin override)
+  .ssba > div
+    +respond-to(mobile-or-tablet)
+      text-align: center !important
+
+  +respond-to(mobile-or-tablet)
+    text-align: center
+
   .below-post-left
-    +make-sm-column(6)
+    +make-lg-column(6)
 
   .below-post-right
-    +make-sm-column(6)
+    +make-lg-column(6)
 
   .below-post-heading
     @extend .heading-3
     margin-top: 0
+
+  .below-post-widget
+    margin-bottom: 40px
+
+    .below-post-widget-left
+      +respond-to(mobile-or-tablet)
+        margin-bottom: 40px
+
+    .below-post-widget-right
+      &:last-child
+        margin-bottom: 0
 
 .page-navigation
   font-size: 36px

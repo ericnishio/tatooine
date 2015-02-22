@@ -80,8 +80,8 @@ function tatooine_widgets_init()
   register_sidebar( array(
     'name'          => 'Below Post Left',
     'id'            => 'below_post_left',
-    'before_widget' => '',
-    'after_widget'  => '',
+    'before_widget' => '<div class="below-post-widget below-post-widget-left">',
+    'after_widget'  => '</div>',
     'before_title'  => '<h2 class="below-post-heading">',
     'after_title'   => '</h2>',
   ) );
@@ -89,8 +89,8 @@ function tatooine_widgets_init()
   register_sidebar( array(
     'name'          => 'Below Post Right',
     'id'            => 'below_post_right',
-    'before_widget' => '',
-    'after_widget'  => '',
+    'before_widget' => '<div class="below-post-widget below-post-widget-right">',
+    'after_widget'  => '</div>',
     'before_title'  => '<h2 class="below-post-heading">',
     'after_title'   => '</h2>',
   ) );
