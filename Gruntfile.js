@@ -7,6 +7,7 @@ module.exports = function(grunt) {
         sass: 'sass',
         css: 'css',
         root: '.',
+        tmp: '.tmp',
         vendor: 'vendor',
       },
       sass: {
@@ -17,7 +18,7 @@ module.exports = function(grunt) {
             sourcemap: 'none'
           },
           files: {
-            '<%= paths.sass %>/main.css': '<%= paths.sass %>/main.scss'
+            '<%= paths.tmp %>/main.css': '<%= paths.sass %>/main.scss'
           }
         }
       },
@@ -29,7 +30,7 @@ module.exports = function(grunt) {
             }
           },
           files: {
-            '<%= paths.root %>/style.css': ['<%= paths.sass %>/main.css']
+            '<%= paths.root %>/style.css': ['<%= paths.tmp %>/main.css']
           }
         }
       },
@@ -58,7 +59,7 @@ module.exports = function(grunt) {
         version: {
           files: [
             '<%= paths.root %>/package.json',
-            '<%= paths.sass %>/main.css'
+            '<%= paths.tmp %>/main.css'
           ],
           tasks: ['template', 'update_json']
         }
