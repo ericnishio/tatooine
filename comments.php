@@ -4,10 +4,10 @@
     <?php global $comments_by_type; ?>
     <?php $comments_by_type = &separate_comments( $comments ); ?>
     <?php if ( ! empty( $comments_by_type['comment'] ) ): ?>
-      <section class="section section-container">
+      <section class="section section-container section-more-padding">
           <div class="section-inner">
             <section id="comments-list" class="comments">
-              <h3 class="comments-title"><?php comments_number(); ?></h3>
+              <h3 class="comments-heading"><?php comments_number(); ?></h3>
               <?php if ( get_comment_pages_count() > 1 ) : ?>
                 <nav id="comments-nav-above" class="comments-navigation" role="navigation">
                   <div class="paginated-comments-links">
@@ -34,7 +34,7 @@
     <?php if ( ! empty( $comments_by_type['pings'] ) ): ?>
       <?php $ping_count = count( $comments_by_type['pings'] ); ?>
       <section id="trackbacks-list" class="comments">
-        <h3 class="comments-title"><?php echo '<span class="ping-count">' . $ping_count . '</span> ' . ( $ping_count > 1 ? __( 'Trackbacks', 'tatooine' ) : __( 'Trackback', 'tatooine' ) ); ?></h3>
+        <h3 class="comments-heading"><?php echo '<span class="ping-count">' . $ping_count . '</span> ' . ( $ping_count > 1 ? __( 'Trackbacks', 'tatooine' ) : __( 'Trackback', 'tatooine' ) ); ?></h3>
         <ul>
           <?php wp_list_comments( 'type=pings&callback=tatooine_custom_pings' ); ?>
         </ul>
