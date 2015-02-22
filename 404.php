@@ -2,7 +2,7 @@
   <section id="content" class="section section-narrow section-more-padding" role="main">
     <div class="section-inner">
       <article id="post-0" class="post not-found">
-        <h1 class="heading-2"><?php _e( 'Not Found', 'tatooine' ); ?></h1>
+        <h1 class="heading-1"><?php _e( 'Not Found', 'tatooine' ); ?></h1>
         <section class="entry-content">
           <p><?php _e( 'Nothing found for the requested page. Try a search instead?', 'tatooine' ); ?></p>
           <?php get_search_form(); ?>
