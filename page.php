@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <section id="content" class="section section-narrow section-more-padding entry" role="main">
+  <section id="content" class="section section-narrow entry" role="main">
     <div class="section-inner">
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <h1 class="heading"><?php the_title(); ?></h1>
@@ -26,7 +26,7 @@
       </article>
     </div>
   </section>
-  <section class="section section-container section-secondary section-more-padding">
+  <section class="section section-container section-secondary">
     <div class="section-inner">
       <div class="below-post">
         <div class="below-post-left">

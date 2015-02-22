@@ -1,12 +1,12 @@
 <?php get_header(); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <section id="content" class="section section-narrow section-more-padding" role="main">
+      <section id="content" class="section section-narrow" role="main">
         <div class="section-inner">
           <?php get_template_part( 'entry' ); ?>
         </div>
       </section>
       <?php if ( ! post_password_required() ): ?>
-        <section class="section section-container section-secondary section-more-padding">
+        <section class="section section-container section-secondary">
           <div class="section-inner">
             <div class="below-post">
               <div class="below-post-left">

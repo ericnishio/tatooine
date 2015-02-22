@@ -11,7 +11,7 @@
 
   .entry-info
     position: relative
-    margin-bottom: $section-padding * 2
+    margin-bottom: 40px
 
   .heading
     @extend .heading-1
@@ -85,11 +85,18 @@
   .below-post-widget
     margin-bottom: 40px
 
-    .below-post-widget-left
+    &:last-child
+      margin-bottom: 0
+
+    &.below-post-widget-left
       +respond-to(mobile-or-tablet)
         margin-bottom: 40px
 
-    .below-post-widget-right
+      &:last-child
+        +respond-to(mobile-or-tablet)
+          margin-bottom: 40px
+
+    &.below-post-widget-right
       &:last-child
         margin-bottom: 0
 

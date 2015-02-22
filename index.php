@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <section id="content" class="section section-narrow section-more-padding" role="main">
+  <section id="content" class="section section-narrow" role="main">
     <div class="section-inner">
       <div class="entry-list">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

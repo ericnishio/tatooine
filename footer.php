@@ -22,7 +22,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-container section-copyright section-darker">
+      <section class="section section-container section-shallow section-copyright section-darker">
         <div class="section-inner">
           <div class="copyright-columns">
             <div class="copyright-column">

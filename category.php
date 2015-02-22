@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="content" class="section section-narrow section-more-padding" role="main">
+<section id="content" class="section section-narrow" role="main">
   <div class="section-inner">
     <div class="entry-list">
       <h1 class="entry-list-heading"><?php _e( 'Category: ', 'tatooine' ); ?><?php single_cat_title(); ?></h1>

@@ -4,7 +4,7 @@
     <?php global $comments_by_type; ?>
     <?php $comments_by_type = &separate_comments( $comments ); ?>
     <?php if ( ! empty( $comments_by_type['comment'] ) ): ?>
-      <section class="section section-container section-more-padding">
+      <section class="section section-container">
           <div class="section-inner">
             <section id="comments-list" class="comments">
               <h3 class="comments-heading"><?php comments_number(); ?></h3>
@@ -41,7 +41,7 @@
       </section>
     <?php endif; ?>
   <?php endif; ?>
-  <section class="section section-secondary section-container section-more-padding">
+  <section class="section section-secondary section-container">
     <div class="section-inner">
       <?php if ( comments_open() ) comment_form( array(
         'class_submit' => 'button',

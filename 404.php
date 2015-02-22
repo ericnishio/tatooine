@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <section id="content" class="section section-narrow section-more-padding" role="main">
+  <section id="content" class="section section-narrow" role="main">
     <div class="section-inner">
       <article id="post-0" class="post not-found">
         <h1 class="heading-1"><?php _e( 'Not Found', 'tatooine' ); ?></h1>
