@@ -53,41 +53,41 @@
     &:hover
       color: $grapes-light
 
+  .menu ul,
   .menu
     +respond-to(mobile)
       margin-bottom: 10px
 
-    ul
-      -webkit-margin-before: 0
-      -webkit-margin-after: 0
-      -webkit-padding-start: 0
-      list-style-type: none
-      margin: 0
+    -webkit-margin-before: 0
+    -webkit-margin-after: 0
+    -webkit-padding-start: 0
+    list-style-type: none
+    margin: 0
 
-      li
-        display: inline-block
-        margin-right: 5px
+    li
+      display: inline-block
+      margin-right: 5px
+
+      +respond-to(mobile)
+        margin-right: 0
+        width: 100%
+
+      a
+        @extend .button-small
+        @extend .button-inverted
+
+        &:hover
+          color: $grapes-light
 
         +respond-to(mobile)
-          margin-right: 0
           width: 100%
+          margin-bottom: 10px
 
-        a
-          @extend .button-small
-          @extend .button-inverted
+      &:before
+        content: none
 
-          &:hover
-            color: $grapes-light
-
-          +respond-to(mobile)
-            width: 100%
-            margin-bottom: 10px
-
-        &:before
-          content: none
-
-        &:last-child
-          margin-right: 0
+      &:last-child
+        margin-right: 0
 
   .lead
     font-family: $font-family-slim
