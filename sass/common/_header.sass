@@ -13,6 +13,11 @@
   a
     color: $pink
 
+  .section-inner
+    +respond-to(mobile)
+      padding-top: 10px
+      padding-bottom: 10px
+
 .header-container
   @extend .container
 
@@ -100,3 +105,5 @@
     +respond-to(mobile)
       font-size: 8px
       font-weight: 300
+      margin-top: 3px
+      margin-bottom: 15px
