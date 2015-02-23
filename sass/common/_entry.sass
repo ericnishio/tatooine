@@ -102,12 +102,20 @@
       &:last-child
         margin-bottom: 0
 
+    .button
+      +respond-to(mobile)
+        width: 100%
+
 .page-navigation
   font-size: 36px
   font-family: $font-family-slim
   font-weight: 300
   text-align: center
   text-transform: uppercase
+
+  +respond-to(mobile)
+    font-size: 24px
+    font-weight: 400
 
   .nav-previous,
   .nav-next
