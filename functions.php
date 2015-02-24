@@ -94,6 +94,15 @@ function tatooine_widgets_init()
     'before_title'  => '<h2 class="below-post-heading">',
     'after_title'   => '</h2>',
   ) );
+
+  register_sidebar( array(
+    'name'          => 'After More Link',
+    'id'            => 'after_more_link',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '',
+    'after_title'   => '',
+  ) );
 }
 
 function tatooine_custom_pings( $comment )
@@ -208,6 +217,30 @@ function beautify_string( $string )
   $replacement = substr( $string, $pos, 1 );
 
   return substr_replace( $string, "<em>$replacement</em>", $pos, 1 );
+}
+
+add_filter( 'the_content', 'widget_added_after_more_link' );
+function widget_added_after_more_link( $text )
+{
+  $sidebar_id = 'after_more_link';
+
+  if ( is_single() && is_active_sidebar( $sidebar_id ) ) {
+    ob_start();
+    dynamic_sidebar( $sidebar_id );
+    $widget_content = ob_get_contents();
+    ob_end_clean();
+
+    $pos1 = strpos( $text, '<span id="more-' );
+    $pos2 = strpos( $text, '</span>', $pos1 );
+
+    if ( $pos1 && $pos2 ) {
+      $text1 = substr( $text, 0, $pos2 );
+      $text2 = substr( $text, $pos2 );
+      $text = $text1 . $widget_content . $text2;
+    }
+  }
+
+  return $text;
 }
 
 /**
