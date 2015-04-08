@@ -22,6 +22,35 @@ module.exports = function(grunt) {
           }
         }
       },
+      csssplit: {
+        dist: {
+          src: ['<%= paths.root %>/style.css'],
+          dest: '<%= paths.root %>/css/split.css',
+          options: {
+              maxSelectors: 4095,
+              maxPages: 3,
+              suffix: '-part-'
+          }
+        }
+      },
+      cssmin: {
+        target: {
+          files: [
+            {
+              expand: true,
+              cwd: '<%= paths.root %>/css',
+              src: ['split-part-1.css'],
+              dest: 'css'
+            },
+            {
+              expand: true,
+              cwd: '<%= paths.root %>/css',
+              src: ['split-part-2.css'],
+              dest: 'css'
+            }
+          ]
+        }
+      },
       template: {
         dist: {
           options: {
@@ -54,7 +83,7 @@ module.exports = function(grunt) {
       watch: {
         sass: {
           files: ['<%= paths.sass %>/**/*.{scss,sass}'],
-          tasks: ['sass']
+          tasks: ['styles']
         },
         version: {
           files: [
@@ -66,8 +95,10 @@ module.exports = function(grunt) {
       }
     });
 
+    grunt.registerTask('styles', ['sass', 'csssplit', 'cssmin']);
+
     // Builds the theme
-    grunt.registerTask('build', ['sass', 'template', 'update_json']);
+    grunt.registerTask('build', ['styles', 'template', 'update_json']);
 
     // Default task
     grunt.registerTask('default', ['build', 'watch']);

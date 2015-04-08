@@ -6,7 +6,13 @@
   <title><?php wp_title( ' | ', true, 'right' ); ?></title>
   <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
+  <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/split-part-1.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/split-part-2.css">
+  <![endif]-->
+  <![if !IE]>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
+  <![endif]>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
   <?php wp_head(); ?>
 </head>
