@@ -257,3 +257,14 @@ function render_sidebar( $sidebar_id )
     return '';
   }
 }
+
+function html5_shiv() {
+  ?>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <?php
+}
+if ( !is_admin() ) {
+  add_action( 'wp_head','html5_shiv' );
+}
