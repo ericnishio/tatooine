@@ -260,7 +260,7 @@ function render_sidebar( $sidebar_id )
 
 function html5_shiv() {
   ?>
-  <!--[if lt IE 9]>
+  <!--[if lt IE 10]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php
