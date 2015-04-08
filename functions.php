@@ -18,13 +18,6 @@ function tatooine_load_scripts()
   wp_enqueue_script( 'html5shiv', 'https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js' );
 }
 
-add_filter( 'script_loader_tag', function( $tag, $handle) {
-  if ( $handle === 'html5shiv' ) {
-    $tag = "<!--[if lt IE 9]>$tag<![endif]-->";
-  }
-  return $tag;
-}, 10, 2 );
-
 add_action( 'comment_form_before', 'tatooine_enqueue_comment_reply_script' );
 function tatooine_enqueue_comment_reply_script()
 {
