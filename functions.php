@@ -15,7 +15,6 @@ add_action( 'wp_enqueue_scripts', 'tatooine_load_scripts' );
 function tatooine_load_scripts()
 {
   wp_enqueue_script( 'jquery' );
-  wp_enqueue_script( 'html5shiv', 'https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js' );
 }
 
 add_action( 'comment_form_before', 'tatooine_enqueue_comment_reply_script' );
