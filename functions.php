@@ -261,7 +261,7 @@ function render_sidebar( $sidebar_id )
 function html5_shiv() {
   ?>
   <!--[if lt IE 10]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
   <![endif]-->
   <?php
 }
