@@ -1,15 +1,13 @@
 .button-base
   @extend .btn
-  border: 2px solid transparent
-  border-radius: 5px
-  color: $pink
+  border-radius: 0
+  color: $white
   font-family: $font-family-serif
   font-weight: 400
-  transition: border-color 0.2s ease-in-out, color 0.15s ease-in-out
+  transition: all 0.2s ease-in-out
 
   &:hover
-    border-color: transparent
-    color: $pink
+    color: $white
 
   &:focus
     color: $pink
@@ -25,14 +23,20 @@
 .button
   @extend .button-base
   @extend .btn-lg
-  background-color: transparent
+  background-color: $pink
   border-color: $pink
   padding-left: 30px
   padding-right: 30px
 
+  &:hover
+    background-color: lighten($pink, 15%)
+    border-color: lighten($pink, 15%)
+
 .button-inverted
   background-color: $grapes
   border-color: $grapes-washed
+  border-radius: 5px
+  border-width: 2px
   color: $grapes-light
 
   &.button-small:focus

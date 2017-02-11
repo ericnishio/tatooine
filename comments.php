@@ -70,7 +70,7 @@
         'comment_field' =>
           '<div class="form-group">'
           . '<label for="comment">' . __( 'Comment', 'tatooine' ) . '</label>'
-          . '<textarea id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea>'
+          . '<textarea id="comment" class="form-control" name="comment" cols="45" rows="5" aria-required="true"></textarea>'
           . '</div>',
       ) ); ?>
     </div>
