@@ -47,6 +47,11 @@ module.exports = function(grunt) {
               cwd: '<%= paths.root %>/css',
               src: ['split-part-2.css'],
               dest: 'css'
+            },
+            {
+              cwd: '<%= paths.root %>',
+              src: ['style.css'],
+              dest: './style.css'
             }
           ]
         }
@@ -95,10 +100,10 @@ module.exports = function(grunt) {
       }
     });
 
-    grunt.registerTask('styles', ['sass', 'csssplit', 'cssmin']);
+    grunt.registerTask('styles', ['sass', 'template', 'csssplit', 'cssmin']);
 
     // Builds the theme
-    grunt.registerTask('build', ['styles', 'template', 'update_json']);
+    grunt.registerTask('build', ['styles', 'update_json']);
 
     // Default task
     grunt.registerTask('default', ['build', 'watch']);
